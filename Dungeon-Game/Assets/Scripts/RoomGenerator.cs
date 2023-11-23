@@ -63,14 +63,15 @@ public class RoomGenerator : MonoBehaviour
             for(int c = 0; c < matrizTiles.GetLength(0); c++)
             {
                 GameObject instantiatedTile = Instantiate(tile, new Vector2(c + spacex, f + spacey), Quaternion.identity);
+                instantiatedTile.GetComponent<Tale>().ReceiveDates(matrizTiles[c, f], c, f);
                 instantiatedTile.transform.parent = transform;
                 spacex += 0.1f;
                 tiles[c,f] = instantiatedTile;
 
-                if (matrizTiles[c,f] == 1)
+                /*if (matrizTiles[c,f] == 1)
                 {
                     instantiatedTile.GetComponent<SpriteRenderer>().color = Color.red;
-                }
+                }*/
             }
             spacex = 0;
             spacey += 0.1f;
