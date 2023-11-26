@@ -45,3 +45,6 @@ TagManager:
   - name: Player
     uniqueID: 2793830563
     locked: 0
+  - name: IngameShopItems&Badges
+    uniqueID: 1420053869
+    locked: 0
