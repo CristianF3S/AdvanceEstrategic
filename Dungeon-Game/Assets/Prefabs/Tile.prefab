@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1808222309873323727}
   - component: {fileID: 6506760549184252600}
   m_Layer: 0
-  m_Name: Tale1
+  m_Name: Tile
   m_TagString: Tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,3 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 201250ef4d247bc4886907392e4ce8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ID: 0
+  posX: 0
+  posY: 0
