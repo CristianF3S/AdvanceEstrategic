@@ -42,9 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 871246041
+    locked: 0
   - name: Player
     uniqueID: 2793830563
     locked: 0
-  - name: IngameShopItems&Badges
+  - name: ItemsInFront
     uniqueID: 1420053869
     locked: 0

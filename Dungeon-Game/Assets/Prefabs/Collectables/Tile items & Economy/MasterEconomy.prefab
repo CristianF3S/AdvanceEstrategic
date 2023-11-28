@@ -41,9 +41,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 409567619175377206}
-  - component: {fileID: 6636666373103321216}
+  - component: {fileID: 5846787392759073293}
   m_Layer: 0
-  m_Name: CompleteBadge
+  m_Name: CompleteEconomy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,9 +64,10 @@ Transform:
   m_Children:
   - {fileID: 830880737840217984}
   - {fileID: 6860492968680670877}
+  - {fileID: 1983578118584509448}
   m_Father: {fileID: 5618820490945841104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &6636666373103321216
+--- !u!95 &5846787392759073293
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -76,7 +77,7 @@ Animator:
   m_GameObject: {fileID: 420981867147372114}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3ddbe5519351fbe4babbd9004b5aa4fc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3899e3e3de2514441b74e3d7a60b2b5d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -87,6 +88,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &778967822042518599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1983578118584509448}
+  m_Layer: 0
+  m_Name: SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1983578118584509448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778967822042518599}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.47252095, y: 0.04041695, z: -0.00005895109}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 409567619175377206}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3711862002494199746
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 830880737840217984}
   m_Layer: 0
-  m_Name: Badge
+  m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -159,7 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 323828388356391216}
   m_Layer: 0
-  m_Name: MasterBadges
+  m_Name: MasterEconomy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
