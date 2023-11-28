@@ -247,6 +247,8 @@ MonoBehaviour:
   roomGeneratorObj: {fileID: 2227589425837460032, guid: f0b9be3e1b61cab43b296b0828e42597, type: 3}
   referenceOfRoomGenerator: []
   player: {fileID: 412830495351619841, guid: 92835ee89b2d76445a52735941ae297f, type: 3}
+  movementCard_SO: []
+  movementCards_GO: []
 --- !u!4 &1283720574
 Transform:
   m_ObjectHideFlags: 0

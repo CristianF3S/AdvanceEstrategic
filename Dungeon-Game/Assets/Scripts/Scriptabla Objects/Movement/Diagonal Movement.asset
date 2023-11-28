@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2cc6541e58a2fdb41b9fa813a2a4760e, type: 3}
-  m_Name: L Movement
+  m_Name: Diagonal Movement
   m_EditorClassIdentifier: 
   cardName: 
   cardSprite: {fileID: 0}
-  xMovement: 0
-  yMovement: 0
+  pos1Movement: {x: 3, y: 3}
+  pos2Movement: {x: 3, y: 3}
