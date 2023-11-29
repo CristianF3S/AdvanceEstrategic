@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/UssStyles/Menus.uss?fileID=7433441132597879392&amp;guid=8a98df6d1fd4ca342a06347ee780cba1&amp;type=3#Menus" />
+    <ui:VisualElement name="MainContainer" style="flex-grow: 1;">
+        <ui:VisualElement name="Prueba" class="Buttons" />
+        <ui:VisualElement name="Prueba" class="Buttons" style="background-color: rgb(87, 53, 53); display: flex; visibility: visible; overflow: visible;" />
+        <ui:VisualElement name="Prueba" class="Buttons" />
+    </ui:VisualElement>
+</ui:UXML>

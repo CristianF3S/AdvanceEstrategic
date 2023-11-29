@@ -1,0 +1,22 @@
+.Buttons {
+    background-color: rgb(0, 0, 0);
+    width: 20%;
+    height: 20%;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    align-self: auto;
+    flex-shrink: 1;
+    flex-grow: 0;
+    opacity: 1;
+    flex-wrap: nowrap;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
