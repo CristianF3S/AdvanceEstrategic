@@ -14,6 +14,7 @@ public class Tale : MonoBehaviour
     void Start()
     {
         collider2D = GetComponent<Collider2D>();
+        collider2D.enabled = false;
         TilesAparience();
     }
 
@@ -36,6 +37,26 @@ public class Tale : MonoBehaviour
         {
             this.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
             collider2D.enabled = false;
+        }
+    }
+
+    public void PlayerMovementActive()
+    {
+        if(ID != 1)
+        {
+            GetComponent<SpriteRenderer>().color = Color.green;
+            collider2D.enabled = true;
+        }
+        
+    }
+
+    public void DesativeCollider()
+    {
+        if (ID != 1)
+        {
+            GetComponent<SpriteRenderer>().color = Color.white;
+            collider2D.enabled = false;
+
         }
     }
 }

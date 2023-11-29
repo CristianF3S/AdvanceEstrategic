@@ -77,4 +77,52 @@ public class RoomGenerator : MonoBehaviour
             spacey += 0.1f;
         }
     }
+
+    public void PosiblePlayerMovement(int posX, int posY, int quantityMovement)
+    {
+        int n = 0;
+        while(n <= quantityMovement)
+        {
+            if(posX + n < 8 && posY + n < tiles.GetLength(1))
+            {
+                tiles[posX + n, posY].GetComponent<Tale>().PlayerMovementActive();
+                tiles[posX, posY + n].GetComponent<Tale>().PlayerMovementActive();
+                tiles[posX + n, posY + n].GetComponent<Tale>().PlayerMovementActive();
+
+            }
+
+            if (posX + n < 8 && posY - n >= 0)
+            {
+                tiles[posX + n, posY].GetComponent<Tale>().PlayerMovementActive();
+                tiles[posX, posY - n].GetComponent<Tale>().PlayerMovementActive();
+                tiles[posX + n, posY - n].GetComponent<Tale>().PlayerMovementActive();
+            }
+
+            if (posX - n >= 0 && posY + n < tiles.GetLength(1))
+            {
+                tiles[posX - n, posY].GetComponent<Tale>().PlayerMovementActive();
+                tiles[posX, posY + n].GetComponent<Tale>().PlayerMovementActive();
+                tiles[posX - n, posY + n].GetComponent<Tale>().PlayerMovementActive();
+            }
+
+            if (posX - n >= 0 && posY - n >= 0)
+            {
+                tiles[posX - n, posY].GetComponent<Tale>().PlayerMovementActive();
+                tiles[posX, posY + n].GetComponent<Tale>().PlayerMovementActive();
+                tiles[posX - n, posY - n].GetComponent<Tale>().PlayerMovementActive();
+            }
+            n++;
+        }
+    }
+
+    public void DesactivePosibleToMove()
+    {
+        for (int f = 0; f < tiles.GetLength(1); f++)
+        {
+            for (int c = 0; c < tiles.GetLength(0); c++)
+            {
+                tiles[c, f].GetComponent<Tale>().DesativeCollider();
+            }
+        }
+    }
 }

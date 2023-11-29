@@ -6,7 +6,13 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject roomGeneratorObj;
     [SerializeField] GameObject[] referenceOfRoomGenerator;
+    [SerializeField] int idRoomActive;
+    //Reference to the player
     [SerializeField] GameObject player;
+    Player playerScript;
+    int QuantityPlayerMovement = 1;
+
+
     [SerializeField] MovementCard_SO[] movementCard_SO; //Tener los 3 Card Movement seteados
     [SerializeField] GameObject[] movementCards_GO; // Tener los 3 profabs que contienen los Scritable Object
     //Gameplay
@@ -20,29 +26,11 @@ public class GameManager : MonoBehaviour
     {
         numberOfRooms = Random.Range(4, 7);
         referenceOfRoomGenerator = new GameObject[numberOfRooms];
+        idRoomActive = 0;
         GenerateRooms();
+        StartCoroutine(pruebas());
     }
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
 
-            // Lanza un rayo desde la posición del ratón
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
-
-            // Comprueba si se ha golpeado un objeto
-            if (hit.collider != null)
-            {
-                if (hit.collider.tag == "Tiles")
-                {
-                    player.transform.position = hit.collider.transform.position;
-                    player.GetComponent<SpriteRenderer>().color = Color.grey;
-                }
-            }
-
-        }
-    }
     private void GenerateRooms()
     {
         for (int c = 0; c < numberOfRooms; c++)
@@ -59,16 +47,26 @@ public class GameManager : MonoBehaviour
         }
 
         player = Instantiate(player, new Vector3(4.4f, 0, -1), Quaternion.identity);
+        playerScript = player.GetComponent<Player>();
+        playerScript.gameManager = this.gameObject.GetComponent<GameManager>();
     }
 
     public void PlayerTurn()
     {
-        //Activar cartas
-        for(int i = 0; i < movementCards_GO.Length; i++)
-        {
-            movementCards_GO[i].SetActive(true);
-        }
+        referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().PosiblePlayerMovement(playerScript.posX, playerScript.posY, QuantityPlayerMovement);
     }
 
+    public void PlayerPlayed()
+    {
+        referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().DesactivePosibleToMove();
+
+        StartCoroutine(pruebas());
+    }
+
+    IEnumerator pruebas()
+    {
+        yield return new WaitForSeconds(2);
+        PlayerTurn();
+    }
 
 }
