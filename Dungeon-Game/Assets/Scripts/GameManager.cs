@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     //Reference to the player
     [SerializeField] GameObject player;
     Player playerScript;
-    int QuantityPlayerMovement = 1;
+    public int QuantityPlayerMovement = 1;
 
 
     [SerializeField] MovementCard_SO[] movementCard_SO; //Tener los 3 Card Movement seteados
