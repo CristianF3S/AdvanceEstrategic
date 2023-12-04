@@ -48,6 +48,7 @@
 .Play {
     width: 40%;
     height: 50%;
+    font-size: 50px;
 }
 
 .ButtonsPosition {
