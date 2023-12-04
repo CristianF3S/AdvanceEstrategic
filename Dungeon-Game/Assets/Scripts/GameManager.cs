@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameObject camera;
     [SerializeField] GameObject roomGeneratorObj;
     [SerializeField] GameObject[] referenceOfRoomGenerator;
     [SerializeField] int idRoomActive;
@@ -46,7 +47,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        player = Instantiate(player, new Vector3(4.4f, 0, -1), Quaternion.identity);
+        player = Instantiate(player, new Vector3(4.4f, 0, 0), Quaternion.identity);
         playerScript = player.GetComponent<Player>();
         playerScript.gameManager = this.gameObject.GetComponent<GameManager>();
     }
@@ -56,17 +57,30 @@ public class GameManager : MonoBehaviour
         referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().PosiblePlayerMovement(playerScript.posX, playerScript.posY, QuantityPlayerMovement);
     }
 
+    //Player
     public void PlayerPlayed()
     {
         referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().DesactivePosibleToMove();
+        MoveTheCamera();
+    }
 
+    public void PlayerTurnFinished()
+    {
         StartCoroutine(pruebas());
     }
 
+    //Management
     IEnumerator pruebas()
     {
         yield return new WaitForSeconds(2);
+        referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().EnemiesAttack();
+        yield return new WaitForSeconds(2);
         PlayerTurn();
+    }
+
+    public void MoveTheCamera()
+    {
+        camera.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + 1.1f, camera.transform.position.z);
     }
 
 }

@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a39e93493e45644ca825f57ab7f239c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 519420028}
   roomGeneratorObj: {fileID: 2227589425837460032, guid: f0b9be3e1b61cab43b296b0828e42597, type: 3}
   referenceOfRoomGenerator: []
   idRoomActive: 0

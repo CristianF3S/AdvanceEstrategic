@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class RoomGenerator : MonoBehaviour
 {
+    [SerializeField] private GameObject Enemy;
     [SerializeField] private GameObject tile;
     //Identification of the room
     public int RoomID;
     public bool BossRoom = false;
 
+    //Enemies informmation
+    [SerializeField] private Enemy[] enemies;
     //Tiles information
     public int[,] matrizTiles;
     public GameObject[,] tiles;
@@ -30,8 +33,10 @@ public class RoomGenerator : MonoBehaviour
         }
         matrizTiles = new int[x, y];
         tiles = new GameObject[x, y];
+        enemies = new Enemy[3];
         GenerateTerrain();
         GenerateTales();
+        GenerateEnemy();
     }
 
     private void GenerateTerrain()
@@ -67,14 +72,33 @@ public class RoomGenerator : MonoBehaviour
                 instantiatedTile.transform.parent = transform;
                 spacex += 0.1f;
                 tiles[c,f] = instantiatedTile;
-
-                /*if (matrizTiles[c,f] == 1)
-                {
-                    instantiatedTile.GetComponent<SpriteRenderer>().color = Color.red;
-                }*/
             }
             spacex = 0;
             spacey += 0.1f;
+        }
+    }
+
+    public void GenerateEnemy()
+    {
+        int s = 3;
+        for(int i = 0; i<3; i++)
+        {
+            while (true)
+            {
+                int x = Random.Range(0, 8);
+                int y = Random.Range(s, tiles.GetLength(1) - 5);
+                if (tiles[x, y].GetComponent<Tale>().ID != 1)
+                {
+                    GameObject instantiatedEnemy = Instantiate(Enemy, tiles[x,y].transform.position, Quaternion.identity);
+                    instantiatedEnemy.GetComponent<Enemy>().x = tiles[x, y].GetComponent<Tale>().posX;
+                    instantiatedEnemy.GetComponent<Enemy>().y = tiles[x, y].GetComponent<Tale>().posY;
+                    instantiatedEnemy.GetComponent<Enemy>().roomGenerator = this.GetComponent<RoomGenerator>();
+                    instantiatedEnemy.transform.parent = transform;
+                    enemies[i] = instantiatedEnemy.GetComponent<Enemy>();
+                    break;
+                }
+            }
+            s += 5;
         }
     }
 
@@ -108,7 +132,7 @@ public class RoomGenerator : MonoBehaviour
             if (posX - n >= 0 && posY - n >= 0)
             {
                 tiles[posX - n, posY].GetComponent<Tale>().PlayerMovementActive();
-                tiles[posX, posY + n].GetComponent<Tale>().PlayerMovementActive();
+                tiles[posX, posY - n].GetComponent<Tale>().PlayerMovementActive();
                 tiles[posX - n, posY - n].GetComponent<Tale>().PlayerMovementActive();
             }
             n++;
@@ -122,6 +146,19 @@ public class RoomGenerator : MonoBehaviour
             for (int c = 0; c < tiles.GetLength(0); c++)
             {
                 tiles[c, f].GetComponent<Tale>().DesativeCollider();
+            }
+        }
+    }
+
+    //Enemies Activated
+    public void EnemiesAttack()
+    {
+        for(int i = 0; i < enemies.Length; i++)
+        {
+            if (enemies[i] != null)
+            {
+
+                enemies[i].EnemyTurn();
             }
         }
     }

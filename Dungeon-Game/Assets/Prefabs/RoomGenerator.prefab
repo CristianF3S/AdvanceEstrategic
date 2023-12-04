@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e558f8ecc79a16b458527c6a6ab43ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enemy: {fileID: 1654563924367435622, guid: a5c501ad71982b345b9ef87d0c07a6ec, type: 3}
   tile: {fileID: 7106997055687485763, guid: 60cb3370eb8adef48bcb7fd3f6eb131d, type: 3}
+  RoomID: 0
+  BossRoom: 0

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tiles
   - MovementCart
+  - Enemy
   layers:
   - Default
   - TransparentFX
