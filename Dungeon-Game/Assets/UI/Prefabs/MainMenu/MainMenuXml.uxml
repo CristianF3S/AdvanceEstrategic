@@ -6,7 +6,7 @@
             <ui:VisualElement name="LogoImagen" class="LogoImagen" style="flex-grow: 1;" />
         </ui:VisualElement>
         <ui:VisualElement name="ButtonPlay" class="ButtonPlay">
-            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Play" class="Play" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Play" text="MainMenuPlay" class="Play" />
         </ui:VisualElement>
         <ui:VisualElement name="ButtonsPosition" class="ButtonsPosition" style="flex-grow: 1;">
             <ui:Button text="Tutorial" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Tutorial" class="Buttons" />
