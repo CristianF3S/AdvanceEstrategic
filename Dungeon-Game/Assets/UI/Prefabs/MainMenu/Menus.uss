@@ -75,17 +75,28 @@
     margin-bottom: 38px;
     margin-left: 38px;
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(83, 83, 83, 0);
     transition-duration: 0.1s;
     transition-timing-function: ease-in;
-    height: 30%;
+    height: 50%;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    font-size: 40px;
 }
 
 .Buttons:hover {
-    background-color: rgb(172, 172, 172);
+    background-color: rgba(172, 172, 172, 0);
     width: 12%;
-    height: 35%;
-    font-size: 16px;
+    height: 50%;
+    font-size: 45px;
+    -unity-font-style: bold;
+}
+
+.Buttons:active {
+    -unity-font-style: bold;
+    font-size: 39px;
 }
 
 .BlackFade {

@@ -1,19 +1,19 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Prefabs/MainMenu/Menus.uss?fileID=7433441132597879392&amp;guid=8a98df6d1fd4ca342a06347ee780cba1&amp;type=3#Menus" />
-    <ui:VisualElement name="BackGround" class="BackGrounds" style="flex-grow: 1;" />
+    <Style src="project://database/Assets/UI/Prefabs/MainMenu/Menus.uss?fileID=7433441132597879392&amp;guid=020387e839a152f4098355d1e8adbb08&amp;type=3#Menus" />
+    <ui:VisualElement name="BackGround" class="BackGrounds" style="flex-grow: 1; display: flex;" />
     <ui:VisualElement name="MainContainer" class="MainContainer">
         <ui:VisualElement name="LogoJuego" class="LogoJuego">
             <ui:VisualElement name="LogoImagen" class="LogoImagen" style="flex-grow: 1;" />
         </ui:VisualElement>
         <ui:VisualElement name="ButtonPlay" class="ButtonPlay">
-            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Play" text="MainMenuPlay" class="Play" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Play" text="Play" class="Play" style="display: flex;" />
         </ui:VisualElement>
         <ui:VisualElement name="ButtonsPosition" class="ButtonsPosition" style="flex-grow: 1;">
             <ui:Button text="Tutorial" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Tutorial" class="Buttons" />
-            <ui:Button text="Configuración" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Config" class="Buttons" />
-            <ui:Button text="Tienda" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Shop" class="Buttons" />
-            <ui:Button text="Medallas" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Badges" enable-rich-text="true" class="Buttons" />
-            <ui:Button text="Salir" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Out" class="Buttons" />
+            <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Settings" class="Buttons" />
+            <ui:Button text="Shop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Shop" class="Buttons" />
+            <ui:Button text="Badges" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Badges" enable-rich-text="true" class="Buttons" />
+            <ui:Button text="Quit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Out" class="Buttons" />
         </ui:VisualElement>
         <ui:VisualElement name="Footer" class="Footer" style="flex-grow: 1; background-color: rgb(150, 150, 150);" />
     </ui:VisualElement>
