@@ -19,6 +19,26 @@ MonoBehaviour:
     m_Key: MainMenuPlay
     m_Metadata:
       m_Items: []
+  - m_Id: 756616650031104
+    m_Key: MainMenuTut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756621209239552
+    m_Key: MainMenuConfig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756623457386496
+    m_Key: MainMenuShop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756927015944192
+    m_Key: MainMenuBadges
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756935295500288
+    m_Key: MainMenuOut
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

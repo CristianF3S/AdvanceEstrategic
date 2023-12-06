@@ -22,6 +22,26 @@ MonoBehaviour:
     m_Localized: Play
     m_Metadata:
       m_Items: []
+  - m_Id: 756616650031104
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756621209239552
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756623457386496
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756927015944192
+    m_Localized: Badges
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756935295500288
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

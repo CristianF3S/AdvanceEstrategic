@@ -22,6 +22,26 @@ MonoBehaviour:
     m_Localized: Jugar
     m_Metadata:
       m_Items: []
+  - m_Id: 756616650031104
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756621209239552
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756623457386496
+    m_Localized: Tienda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756927015944192
+    m_Localized: Medallas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756935295500288
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
