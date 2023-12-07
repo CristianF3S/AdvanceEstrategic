@@ -39,6 +39,22 @@ MonoBehaviour:
     m_Key: MainMenuOut
     m_Metadata:
       m_Items: []
+  - m_Id: 774654178885632
+    m_Key: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 774746373881856
+    m_Key: SFX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 774946119221248
+    m_Key: Screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 775072741064704
+    m_Key: Back
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

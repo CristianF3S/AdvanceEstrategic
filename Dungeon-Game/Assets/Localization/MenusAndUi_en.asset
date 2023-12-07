@@ -42,6 +42,22 @@ MonoBehaviour:
     m_Localized: Quit
     m_Metadata:
       m_Items: []
+  - m_Id: 774654178885632
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 774746373881856
+    m_Localized: SFX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 774946119221248
+    m_Localized: Screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 775072741064704
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
