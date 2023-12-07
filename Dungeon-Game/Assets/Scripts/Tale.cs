@@ -33,11 +33,16 @@ public class Tale : MonoBehaviour
 
     public void TilesAparience()
     {
+        if(posY == 0)
+        {
+            ID = 0;
+        }
         if(ID == 1)
         {
             this.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
             collider2D.enabled = false;
         }
+
     }
 
     public void PlayerMovementActive()

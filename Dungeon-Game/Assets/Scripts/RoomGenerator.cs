@@ -6,6 +6,9 @@ public class RoomGenerator : MonoBehaviour
 {
     [SerializeField] private GameObject Enemy;
     [SerializeField] private GameObject tile;
+    [SerializeField] private GameObject door;
+    [SerializeField] public GameObject[] doorsReferences;
+    public GameManager gameManager;
     //Identification of the room
     public int RoomID;
     public bool BossRoom = false;
@@ -26,6 +29,11 @@ public class RoomGenerator : MonoBehaviour
         {
             y = Random.Range(25, 40);
         }
+        else if(RoomID == gameManager.referenceOfRoomGenerator.Length-1)
+        {
+            y = 8;
+            this.gameObject.SetActive(false);
+        }
         else
         {
             y = Random.Range(16, 30);
@@ -37,6 +45,48 @@ public class RoomGenerator : MonoBehaviour
         GenerateTerrain();
         GenerateTales();
         GenerateEnemy();
+        GenerateDoors();
+    }
+    private void GenerateDoors()
+    {
+        print("Cantidad de Rooms: " + gameManager.referenceOfRoomGenerator.Length);
+        if (RoomID == 0)
+        {
+            doorsReferences = new GameObject[gameManager.referenceOfRoomGenerator.Length];
+            int s = 5;
+            for(int i = 1; i < gameManager.referenceOfRoomGenerator.Length; i++)
+            {
+                while (true)
+                {
+                    int x = Random.Range(0, 8);
+                    int y = Random.Range(s, tiles.GetLength(1));
+                    if (tiles[x, y].GetComponent<Tale>().ID != 1)
+                    {
+                        GameObject instantiatedDoor = Instantiate(door, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y-0.2f), Quaternion.identity);
+                        doorsReferences[i] = instantiatedDoor;
+                        instantiatedDoor.GetComponent<Door>().DoorID = i;
+                        instantiatedDoor.GetComponent<Door>().posX = x;
+                        instantiatedDoor.GetComponent<Door>().posY = y;
+                        instantiatedDoor.GetComponent<Door>().gameManager = gameManager;
+                        instantiatedDoor.transform.parent = transform;
+                        break;
+                    }
+                    s += 3;
+                }
+
+            }
+        }
+        else if(RoomID != 0 && RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
+        {
+            int x = Random.Range(0, 8);
+            int y = tiles.GetLength(1) - 1;
+            GameObject instantiatedDoor = Instantiate(door, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y - 0.2f), Quaternion.identity);
+            instantiatedDoor.GetComponent<Door>().DoorID = 0;
+            instantiatedDoor.GetComponent<Door>().posX = x;
+            instantiatedDoor.GetComponent<Door>().posY = y;
+            instantiatedDoor.GetComponent<Door>().gameManager = gameManager;
+            instantiatedDoor.transform.parent = transform;
+        }
     }
 
     private void GenerateTerrain()
@@ -80,25 +130,28 @@ public class RoomGenerator : MonoBehaviour
 
     public void GenerateEnemy()
     {
-        int s = 3;
-        for(int i = 0; i<3; i++)
+        if (RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
         {
-            while (true)
+            int s = 10;
+            for(int i = 0; i<3; i++)
             {
-                int x = Random.Range(0, 8);
-                int y = Random.Range(s, tiles.GetLength(1) - 5);
-                if (tiles[x, y].GetComponent<Tale>().ID != 1)
+                while (true)
                 {
-                    GameObject instantiatedEnemy = Instantiate(Enemy, tiles[x,y].transform.position, Quaternion.identity);
-                    instantiatedEnemy.GetComponent<Enemy>().x = tiles[x, y].GetComponent<Tale>().posX;
-                    instantiatedEnemy.GetComponent<Enemy>().y = tiles[x, y].GetComponent<Tale>().posY;
-                    instantiatedEnemy.GetComponent<Enemy>().roomGenerator = this.GetComponent<RoomGenerator>();
-                    instantiatedEnemy.transform.parent = transform;
-                    enemies[i] = instantiatedEnemy.GetComponent<Enemy>();
-                    break;
+                    int x = Random.Range(0, 8);
+                    int y = Random.Range(s, s+5);
+                    if (tiles[x, y].GetComponent<Tale>().ID != 1)
+                    {
+                        GameObject instantiatedEnemy = Instantiate(Enemy, tiles[x,y].transform.position, Quaternion.identity);
+                        instantiatedEnemy.GetComponent<Enemy>().x = tiles[x, y].GetComponent<Tale>().posX;
+                        instantiatedEnemy.GetComponent<Enemy>().y = tiles[x, y].GetComponent<Tale>().posY;
+                        instantiatedEnemy.GetComponent<Enemy>().roomGenerator = this.GetComponent<RoomGenerator>();
+                        instantiatedEnemy.transform.parent = transform;
+                        enemies[i] = instantiatedEnemy.GetComponent<Enemy>();
+                        break;
+                    }
                 }
+                s += 5;
             }
-            s += 5;
         }
     }
 
@@ -148,6 +201,8 @@ public class RoomGenerator : MonoBehaviour
                 tiles[c, f].GetComponent<Tale>().DesativeCollider();
             }
         }
+
+      
     }
 
     //Enemies Activated

@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject camera;
     [SerializeField] GameObject roomGeneratorObj;
-    [SerializeField] GameObject[] referenceOfRoomGenerator;
+    public GameObject[] referenceOfRoomGenerator;
     [SerializeField] int idRoomActive;
     //Reference to the player
     [SerializeField] GameObject player;
@@ -41,7 +41,9 @@ public class GameManager : MonoBehaviour
             instantiatedTile.transform.parent = transform;
             instantiatedTile.GetComponent<RoomGenerator>().RoomID = c;
 
-            if(c == numberOfRooms - 1)
+            instantiatedTile.GetComponent<RoomGenerator>().gameManager = this.GetComponent<GameManager>();
+
+            if (c == numberOfRooms - 1)
             {
                 instantiatedTile.GetComponent<RoomGenerator>().BossRoom = true;
             }
@@ -81,6 +83,47 @@ public class GameManager : MonoBehaviour
     public void MoveTheCamera()
     {
         camera.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + 1.1f, camera.transform.position.z);
+    }
+
+    public void ChangeTheRoom(int DoorID)
+    {
+        if(DoorID!=0 && DoorID != referenceOfRoomGenerator.Length - 1)
+        {
+            referenceOfRoomGenerator[idRoomActive].SetActive(false);
+            idRoomActive = DoorID;
+            referenceOfRoomGenerator[idRoomActive].SetActive(true);
+
+            camera.transform.position = new Vector3(4.5f, 4.5f, -10);
+
+            player.transform.position = new Vector3(4.4f, 0, 0);
+            playerScript.posX = 4;
+            playerScript.posY = 0;
+
+        }
+        else if(DoorID == referenceOfRoomGenerator.Length - 1)
+        {
+            referenceOfRoomGenerator[idRoomActive].SetActive(false);
+            idRoomActive = DoorID;
+            referenceOfRoomGenerator[idRoomActive].SetActive(true);
+            //Activar Boss
+        }
+        else if(DoorID == 0)
+        {
+            referenceOfRoomGenerator[idRoomActive].SetActive(false);
+            Vector3 playerPos = referenceOfRoomGenerator[DoorID].GetComponent<RoomGenerator>().doorsReferences[idRoomActive].transform.position;
+            player.transform.position = new Vector2 (playerPos.x, playerPos.y+0.2f);
+            playerScript.posX = referenceOfRoomGenerator[DoorID].GetComponent<RoomGenerator>().doorsReferences[idRoomActive].GetComponent<Door>().posX;
+            playerScript.posY = referenceOfRoomGenerator[DoorID].GetComponent<RoomGenerator>().doorsReferences[idRoomActive].GetComponent<Door>().posY;
+
+            camera.transform.position = new Vector3(camera.transform.position.x, playerPos.y+0.2f, camera.transform.position.z);
+
+            idRoomActive = DoorID;
+            referenceOfRoomGenerator[idRoomActive].SetActive(true);
+
+
+        }
+
+
     }
 
 }
