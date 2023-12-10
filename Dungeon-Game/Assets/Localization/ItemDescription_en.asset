@@ -1,0 +1,287 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: ItemDescription_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: dc42672a4e790534883bc883655cf676, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 19409666048
+    m_Localized: 2 moves every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22215655424
+    m_Localized: 3 moves every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24862261248
+    m_Localized: 4 moves every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29098508288
+    m_Localized: 2 moves every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33838071808
+    m_Localized: 3 moves every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40246968320
+    m_Localized: 4 moves every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44365774848
+    m_Localized: Add L moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45523402752
+    m_Localized: Add L moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46756528128
+    m_Localized: Add L moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48916594688
+    m_Localized: Add diagonal moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53245116416
+    m_Localized: Increases movement range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54025256960
+    m_Localized: Increases movement range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54767648768
+    m_Localized: Increases movement range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55501651968
+    m_Localized: Increases movement range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56235655168
+    m_Localized: Increases movement range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 786262654976
+    m_Localized: Increases movement range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 787390922752
+    m_Localized: Increases character strength.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788011679744
+    m_Localized: Increases character strength.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 788707934208
+    m_Localized: Increases character strength.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 789479686144
+    m_Localized: Increases character strength.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 790184329216
+    m_Localized: Increases character strength.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 790914138112
+    m_Localized: Increases character strength.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 791656529920
+    m_Localized: 2 attacks every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040924016640
+    m_Localized: Double damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 792411504640
+    m_Localized: 3 attacks every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 793191645184
+    m_Localized: 4 attacks every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1038944305152
+    m_Localized: 2 attacks every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1039514730496
+    m_Localized: 3 attacks every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1040202596352
+    m_Localized: 4 attacks every turn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1041632854016
+    m_Localized: Double damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1042450743296
+    m_Localized: Double damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1043226689536
+    m_Localized: Double damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1142195486720
+    m_Localized: Double damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1143147593728
+    m_Localized: Double damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1144141643776
+    m_Localized: Critical damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1144967921664
+    m_Localized: Critical damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1145831948288
+    m_Localized: Critical damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1146624671744
+    m_Localized: Critical damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1234201739264
+    m_Localized: Critical damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1236722515968
+    m_Localized: Critical damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1238295379968
+    m_Localized: Increases max health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1302958964736
+    m_Localized: Increases max health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1357052903424
+    m_Localized: Increases max health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1359724675072
+    m_Localized: Increases max health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1361997987840
+    m_Localized: Increases max health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1364992720896
+    m_Localized: Increases max health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1369384157184
+    m_Localized: Avoid damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1470542381056
+    m_Localized: Avoid damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1473264484352
+    m_Localized: Avoid damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1512829353984
+    m_Localized: Avoid damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1513701769216
+    m_Localized: Avoid damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1514481909760
+    m_Localized: Avoid damage chance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 971589628198912
+    m_Localized: Heals 1 life point.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 971591175897088
+    m_Localized: Heals 2 life points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 971592643903488
+    m_Localized: Heals 3 life points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 971593910583296
+    m_Localized: Heals 1 life point.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 971595848351744
+    m_Localized: Heals 2 life points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 971597744177152
+    m_Localized: Heals 3 life points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49591877632
+    m_Localized: Add diagonal moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50279743488
+    m_Localized: Add diagonal moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50971803648
+    m_Localized: Add diagonal moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51814858752
+    m_Localized: Add diagonal moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52490141696
+    m_Localized: Add diagonal moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46139965440
+    m_Localized: Add L moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47469559808
+    m_Localized: Add L moves.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48182591488
+    m_Localized: Add L moves.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

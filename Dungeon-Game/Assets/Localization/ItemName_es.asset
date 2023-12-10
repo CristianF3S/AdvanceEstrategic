@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: ItemName_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 830a919768883ff44be4735d38c22ff7, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 5297131749376
+    m_Localized: Hongo Esqueleto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5300575272960
+    m_Localized: Hongo Esqueleto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5303813275648
+    m_Localized: Hongo Esqueleto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5307734949888
+    m_Localized: 'Pluma de Arbol Mistico
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5309886627840
+    m_Localized: 'Pluma de Arbol Mistico
+
+
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5312671645696
+    m_Localized: 'Pluma de Arbol Mistico
+
+
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5317520261120
+    m_Localized: Ojo de Dragartija
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5319936180224
+    m_Localized: Orbe de Raiz Floral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5320561131520
+    m_Localized: Calabaza Putrefacta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5321211248640
+    m_Localized: Frutos Silvestres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5321869754368
+    m_Localized: Libro de Hechizos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5322549231616
+    m_Localized: Libro de Hechizos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5323207737344
+    m_Localized: Libro de Hechizos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5323937546240
+    m_Localized: Mapa de Bosque Ancestral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5324679938048
+    m_Localized: Mapa de Bosque Ancestral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5325355220992
+    m_Localized: Mapa de Bosque Ancestral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5326118584320
+    m_Localized: Daga Venenosa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5326831616000
+    m_Localized: Daga Venenosa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5327519481856
+    m_Localized: Daga Venenosa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5328228319232
+    m_Localized: Varita de Raiz Doblada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5328970711040
+    m_Localized: Varita de Raiz Doblada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5329675354112
+    m_Localized: Varita de Raiz Doblada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5330400968704
+    m_Localized: Escritos Oscuros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5331143360512
+    m_Localized: Escritos Oscuros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5331860586496
+    m_Localized: Escritos Oscuros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5332623949824
+    m_Localized: Carta de Ma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5333357953024
+    m_Localized: Carta de Ma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5334138093568
+    m_Localized: Carta de Ma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5334809182208
+    m_Localized: Trampa para Bestias
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5335480270848
+    m_Localized: Trampa para Bestias
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5336159748096
+    m_Localized: Trampa para Bestias
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5336927305728
+    m_Localized: Anillos de Runas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5337682280448
+    m_Localized: Anillos de Runas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5338466615296
+    m_Localized: Anillos de Runas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5339120926720
+    m_Localized: 'Careta de Bestias '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5339892678656
+    m_Localized: 'Careta de Bestias '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5340731539456
+    m_Localized: 'Careta de Bestias '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5341608148992
+    m_Localized: Huevo Silvestre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5342291820544
+    m_Localized: Huevo Silvestre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5343101321216
+    m_Localized: Huevo Silvestre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5343772409856
+    m_Localized: Piedra de Vida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5344598687744
+    m_Localized: Piedra de Vida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5345299136512
+    m_Localized: Piedra de Vida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5346104442880
+    m_Localized: Baya del Interior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5346809085952
+    m_Localized: Baya del Interior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5347626975232
+    m_Localized: Baya del Interior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5348277092352
+    m_Localized: It014N01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5349065621504
+    m_Localized: It014N02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5349816401920
+    m_Localized: It014N03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5350722371584
+    m_Localized: It014P01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6478478442496
+    m_Localized: It014P02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6483985563648
+    m_Localized: It014P03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 958476220628992
+    m_Localized: Fragmentos de Piedra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 958479760621568
+    m_Localized: Fragmentos de Piedra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 958488660934656
+    m_Localized: Fragmentos de Piedra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 958491248820224
+    m_Localized: 'Elixir Natural '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 958495376015360
+    m_Localized: 'Elixir Natural '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 958473603383296
+    m_Localized: 'Elixir Natural '
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

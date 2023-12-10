@@ -55,6 +55,42 @@ MonoBehaviour:
     m_Key: Back
     m_Metadata:
       m_Items: []
+  - m_Id: 1124690976833536
+    m_Key: Full Screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1124753442603008
+    m_Key: Window
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1255234150596608
+    m_Key: Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1255672170151936
+    m_Key: Lvl1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1255786704011264
+    m_Key: Lvl2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1255788440453120
+    m_Key: Lvl3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1634639792308224
+    m_Key: 'Price:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2277437008773120
+    m_Key: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2277813153955840
+    m_Key: Quit the game
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

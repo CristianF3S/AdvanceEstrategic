@@ -58,6 +58,42 @@ MonoBehaviour:
     m_Localized: Volver
     m_Metadata:
       m_Items: []
+  - m_Id: 1124690976833536
+    m_Localized: Pantalla completa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1124753442603008
+    m_Localized: Ventana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1255234150596608
+    m_Localized: Reiniciar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1255672170151936
+    m_Localized: Nivel 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1255786704011264
+    m_Localized: Nivel 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1255788440453120
+    m_Localized: Nivel 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1634639792308224
+    m_Localized: 'Precio:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2277437008773120
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2277813153955840
+    m_Localized: Salir del juego
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
