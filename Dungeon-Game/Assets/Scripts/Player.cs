@@ -8,10 +8,11 @@ public class Player : MonoBehaviour
     public GameManager gameManager;
     public int posX = 4;
     public int posY = 5;
-    public float life;
 
     //Habilities
+    public float life;
     public float powerAttack;
+    public int quantityMovement;
     // Start is called before the first frame update
     void Start()
     {

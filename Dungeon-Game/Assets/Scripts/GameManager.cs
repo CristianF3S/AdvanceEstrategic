@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     //Reference to the player
     [SerializeField] GameObject player;
     Player playerScript;
-    public int QuantityPlayerMovement = 1;
 
 
     [SerializeField] MovementCard_SO[] movementCard_SO; //Tener los 3 Card Movement seteados
@@ -56,7 +55,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayerTurn()
     {
-        referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().PosiblePlayerMovement(playerScript.posX, playerScript.posY, QuantityPlayerMovement);
+        referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().PosiblePlayerMovement(playerScript.posX, playerScript.posY, playerScript.quantityMovement);
     }
 
     //Player
@@ -105,6 +104,12 @@ public class GameManager : MonoBehaviour
             referenceOfRoomGenerator[idRoomActive].SetActive(false);
             idRoomActive = DoorID;
             referenceOfRoomGenerator[idRoomActive].SetActive(true);
+
+            camera.transform.position = new Vector3(4.5f, 4.5f, -10);
+
+            player.transform.position = new Vector3(4.4f, 0, 0);
+            playerScript.posX = 4;
+            playerScript.posY = 0;
             //Activar Boss
         }
         else if(DoorID == 0)

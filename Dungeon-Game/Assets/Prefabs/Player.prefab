@@ -106,6 +106,7 @@ MonoBehaviour:
   posY: 5
   life: 100
   powerAttack: 20
+  quantityMovement: 1
 --- !u!70 &6456611951881396243
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

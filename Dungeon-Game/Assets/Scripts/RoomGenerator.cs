@@ -138,8 +138,8 @@ public class RoomGenerator : MonoBehaviour
                 while (true)
                 {
                     int x = Random.Range(0, 8);
-                    int y = Random.Range(s, s+5);
-                    if (tiles[x, y].GetComponent<Tale>().ID != 1)
+                    int y = Random.Range(5, tiles.GetLength(1));
+                    if (tiles[x,y] != null && tiles[x, y].GetComponent<Tale>().ID != 1)
                     {
                         GameObject instantiatedEnemy = Instantiate(Enemy, tiles[x,y].transform.position, Quaternion.identity);
                         instantiatedEnemy.GetComponent<Enemy>().x = tiles[x, y].GetComponent<Tale>().posX;
@@ -155,42 +155,7 @@ public class RoomGenerator : MonoBehaviour
         }
     }
 
-    public void PosiblePlayerMovement(int posX, int posY, int quantityMovement)
-    {
-        int n = 0;
-        while(n <= quantityMovement)
-        {
-            if(posX + n < 8 && posY + n < tiles.GetLength(1))
-            {
-                tiles[posX + n, posY].GetComponent<Tale>().PlayerMovementActive();
-                tiles[posX, posY + n].GetComponent<Tale>().PlayerMovementActive();
-                tiles[posX + n, posY + n].GetComponent<Tale>().PlayerMovementActive();
 
-            }
-
-            if (posX + n < 8 && posY - n >= 0)
-            {
-                tiles[posX + n, posY].GetComponent<Tale>().PlayerMovementActive();
-                tiles[posX, posY - n].GetComponent<Tale>().PlayerMovementActive();
-                tiles[posX + n, posY - n].GetComponent<Tale>().PlayerMovementActive();
-            }
-
-            if (posX - n >= 0 && posY + n < tiles.GetLength(1))
-            {
-                tiles[posX - n, posY].GetComponent<Tale>().PlayerMovementActive();
-                tiles[posX, posY + n].GetComponent<Tale>().PlayerMovementActive();
-                tiles[posX - n, posY + n].GetComponent<Tale>().PlayerMovementActive();
-            }
-
-            if (posX - n >= 0 && posY - n >= 0)
-            {
-                tiles[posX - n, posY].GetComponent<Tale>().PlayerMovementActive();
-                tiles[posX, posY - n].GetComponent<Tale>().PlayerMovementActive();
-                tiles[posX - n, posY - n].GetComponent<Tale>().PlayerMovementActive();
-            }
-            n++;
-        }
-    }
 
     public void DesactivePosibleToMove()
     {
@@ -216,5 +181,125 @@ public class RoomGenerator : MonoBehaviour
                 enemies[i].EnemyTurn();
             }
         }
+    }
+
+   
+
+    public void PosiblePlayerMovement(int posX, int posY, int quantityMovement)
+    {
+        //X movement
+        int n = 0;
+        while (n <= quantityMovement)
+        {
+            if (posX + n < 8 && tiles[posX + n, posY].GetComponent<Tale>().ID != 1)
+            {
+                tiles[posX + n, posY].GetComponent<Tale>().PlayerMovementActive();
+            }
+            else
+            {
+                break;
+            }
+            n++;
+        }
+
+        n = 0;
+        while (n <= quantityMovement)
+        {
+            if (posX - n >= 0 && tiles[posX - n, posY].GetComponent<Tale>().ID != 1)
+            {
+                tiles[posX - n, posY].GetComponent<Tale>().PlayerMovementActive();
+            }
+            else
+            {
+                break;
+            }
+            n++;
+        }
+
+        //Y Movement
+        n = 0;
+        while (n <= quantityMovement)
+        {
+            if (posY + n < tiles.GetLength(1) && tiles[posX, posY + n].GetComponent<Tale>().ID != 1)
+            {
+                tiles[posX, posY + n].GetComponent<Tale>().PlayerMovementActive();
+            }
+            else
+            {
+                break;
+            }
+            n++;
+        }
+
+        n = 0;
+        while (n <= quantityMovement)
+        {
+            if (posY - n >= 0 && tiles[posX, posY - n].GetComponent<Tale>().ID != 1)
+            {
+                tiles[posX, posY - n].GetComponent<Tale>().PlayerMovementActive();
+            }
+            else
+            {
+                break;
+            }
+            n++;
+        }
+        //Diagonal Up  Movement
+        n = 0;
+        while (n <= quantityMovement)
+        {
+            if (posX + n < 8 && posY + n < tiles.GetLength(1) && tiles[posX + n, posY + n].GetComponent<Tale>().ID != 1)
+            {
+                tiles[posX + n, posY + n].GetComponent<Tale>().PlayerMovementActive();
+            }
+            else
+            {
+                break;
+            }
+            n++;
+        }
+
+        n = 0;
+        while (n <= quantityMovement)
+        {
+            if (posX - n >= 0 && posY + n < tiles.GetLength(1) && tiles[posX - n, posY + n].GetComponent<Tale>().ID != 1)
+            {
+                tiles[posX - n, posY + n].GetComponent<Tale>().PlayerMovementActive();
+            }
+            else
+            {
+                break;
+            }
+            n++;
+        }
+        //Diagonal Down Movement
+        n = 0;
+        while (n <= quantityMovement)
+        {
+            if (posX + n < 8 && posY - n >= 0 && tiles[posX + n, posY - n].GetComponent<Tale>().ID !=1)
+            {
+                tiles[posX + n, posY - n].GetComponent<Tale>().PlayerMovementActive();
+            }
+            else
+            {
+                break;
+            }
+            n++;
+        }
+
+        n = 0;
+        while (n <= quantityMovement)
+        {
+            if (posX - n >= 0 && posY - n >= 0 && tiles[posX - n, posY - n].GetComponent<Tale>().ID != 1)
+            {
+                tiles[posX - n, posY - n].GetComponent<Tale>().PlayerMovementActive();
+            }
+            else
+            {
+                break;
+            }
+            n++;
+        }
+
     }
 }
