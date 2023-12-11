@@ -7,10 +7,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject camera;
     [SerializeField] GameObject roomGeneratorObj;
     public GameObject[] referenceOfRoomGenerator;
-    [SerializeField] int idRoomActive;
+    public int idRoomActive;
     //Reference to the player
     [SerializeField] GameObject player;
     Player playerScript;
+    //weapon
+    [SerializeField] Weapon[] weapons;
+    public int weaponSelected;
+    public int[] weaponLevel;
+
 
 
     [SerializeField] MovementCard_SO[] movementCard_SO; //Tener los 3 Card Movement seteados
@@ -51,6 +56,7 @@ public class GameManager : MonoBehaviour
         player = Instantiate(player, new Vector3(4.4f, 0, 0), Quaternion.identity);
         playerScript = player.GetComponent<Player>();
         playerScript.gameManager = this.gameObject.GetComponent<GameManager>();
+        playerScript.weapon = weapons[weaponSelected];
     }
 
     public void PlayerTurn()

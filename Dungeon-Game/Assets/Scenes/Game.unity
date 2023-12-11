@@ -249,7 +249,12 @@ MonoBehaviour:
   referenceOfRoomGenerator: []
   idRoomActive: 0
   player: {fileID: 412830495351619841, guid: 92835ee89b2d76445a52735941ae297f, type: 3}
-  QuantityPlayerMovement: 3
+  weapons:
+  - {fileID: 11400000, guid: 3454e624d2123964f973a1c3900e832f, type: 2}
+  - {fileID: 11400000, guid: 4735f9a3a3ef4184c917638e153c38b0, type: 2}
+  - {fileID: 11400000, guid: af88f2dcc9080b9438331ca5fa225b93, type: 2}
+  weaponSelected: 1
+  weaponLevel: 
   movementCard_SO: []
   movementCards_GO: []
 --- !u!4 &1283720574

@@ -2,12 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Player : MonoBehaviour
 {
     public LayerMask collisionLayer;
     public GameManager gameManager;
     public int posX = 4;
     public int posY = 5;
+
+    //Weapon
+    public Weapon weapon;
+    public string nameAttack;
+    public float[] powerWeaponAttack;
+    public Vector2[] attackPosition;
+    public Sprite[] spritesWeapon;
 
     //Habilities
     public float life;
@@ -16,6 +24,10 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        name = weapon.nameAttack;
+        powerWeaponAttack = weapon.powerAttack;
+        attackPosition = weapon.attackPosition;
+        spritesWeapon = weapon.spritesWeapon;
         posX = 4;
         posY = 0;
     }
@@ -37,7 +49,7 @@ public class Player : MonoBehaviour
                     posY = hit.collider.GetComponent<Tale>().posY;
                     this.transform.position = hit.collider.transform.position;
                     gameManager.PlayerPlayed();
-                    PlayerAttack();
+                    PlayerAttack1();
 
                 }
             }
@@ -45,30 +57,16 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void PlayerAttack()
-    {
-        CastRay(Vector2.up);
-        CastRay(Vector2.up + Vector2.right);
-        CastRay(Vector2.right);
-        CastRay(Vector2.right - Vector2.up);
-        CastRay(-Vector2.up);
-        CastRay(-Vector2.up - Vector2.right);
-        CastRay(-Vector2.right);
-        CastRay(-Vector2.right + Vector2.up);
-        gameManager.PlayerTurnFinished();
-    }
 
-    void CastRay(Vector2 direction)
+    public void PlayerAttack1()
     {
-        float maxRayDistance = 1.5f;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxRayDistance, collisionLayer);
-
-        if (hit.collider != null)
+        for(int i = 0; i < attackPosition.Length; i++)
         {
-            if (hit.collider.tag == "Enemy")
-            {
-                hit.collider.GetComponent<Enemy>().ReceiveDamage(powerAttack);
-            }
+            GameObject projectile = Instantiate(weapon.projectile, new Vector2(posX + attackPosition[i].x, posY + attackPosition[i].y), Quaternion.identity);
+            projectile.GetComponent<Projectile>().posX = posX + (int)attackPosition[i].x;
+            projectile.GetComponent<Projectile>().posY = posY + (int)attackPosition[i].y;
+            projectile.GetComponent<Projectile>().gameManager = gameManager;
+            gameManager.PlayerTurnFinished();
         }
     }
 
