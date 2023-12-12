@@ -94,6 +94,10 @@ MonoBehaviour:
     m_Localized: Quit the game.
     m_Metadata:
       m_Items: []
+  - m_Id: 2592878612709376
+    m_Localized: Strength
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

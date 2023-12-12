@@ -91,6 +91,10 @@ MonoBehaviour:
     m_Key: Quit the game
     m_Metadata:
       m_Items: []
+  - m_Id: 2592878612709376
+    m_Key: Strength
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
