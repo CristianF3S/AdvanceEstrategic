@@ -9,12 +9,13 @@ public class GameManager : MonoBehaviour
     public GameObject[] referenceOfRoomGenerator;
     public int idRoomActive;
     //Reference to the player
-    [SerializeField] GameObject player;
-    Player playerScript;
+    public GameObject player;
+    public Player playerScript;
     //weapon
     [SerializeField] Weapon[] weapons;
     public int weaponSelected;
     public int[] weaponLevel;
+
 
 
 
@@ -50,10 +51,11 @@ public class GameManager : MonoBehaviour
             if (c == numberOfRooms - 1)
             {
                 instantiatedTile.GetComponent<RoomGenerator>().BossRoom = true;
+                instantiatedTile.GetComponent<RoomGenerator>().BossFightActive = true;
             }
         }
 
-        player = Instantiate(player, new Vector3(4.4f, 0, 0), Quaternion.identity);
+        player = Instantiate(player, new Vector3(4.4f, 1.1f, 0), Quaternion.identity);
         playerScript = player.GetComponent<Player>();
         playerScript.gameManager = this.gameObject.GetComponent<GameManager>();
         playerScript.weapon = weapons[weaponSelected];
@@ -68,7 +70,10 @@ public class GameManager : MonoBehaviour
     public void PlayerPlayed()
     {
         referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().DesactivePosibleToMove();
-        MoveTheCamera();
+        if(referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().BossFightActive != true)
+        {
+            MoveTheCamera();
+        }
     }
 
     public void PlayerTurnFinished()

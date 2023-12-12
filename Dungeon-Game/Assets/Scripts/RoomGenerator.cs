@@ -8,6 +8,7 @@ public class RoomGenerator : MonoBehaviour
     [SerializeField] private GameObject tile;
     [SerializeField] private GameObject door;
     [SerializeField] public GameObject[] doorsReferences;
+    public GameObject bossArbolina_GO;
     public GameManager gameManager;
     //Identification of the room
     public int RoomID;
@@ -15,6 +16,7 @@ public class RoomGenerator : MonoBehaviour
 
     //Enemies informmation
     [SerializeField] private Enemy[] enemies;
+    public bool BossFightActive = false;
     //Tiles information
     public int[,] matrizTiles;
     public GameObject[,] tiles;
@@ -107,6 +109,14 @@ public class RoomGenerator : MonoBehaviour
                 }
             }
         }
+
+        if(BossRoom == true)
+        {
+            for(int i = 0; i < 8; i++)
+            {
+                matrizTiles[i, matrizTiles.GetLength(1)-1] = 1;
+            } 
+        }
     }
 
     private void GenerateTales()
@@ -126,6 +136,8 @@ public class RoomGenerator : MonoBehaviour
             spacex = 0;
             spacey += 0.1f;
         }
+
+        
     }
 
     public void GenerateEnemy()
@@ -153,6 +165,15 @@ public class RoomGenerator : MonoBehaviour
                 s += 5;
             }
         }
+        else
+        {
+            GameObject instantiatedBoss = Instantiate(bossArbolina_GO, tiles[4, 7].transform.position, Quaternion.identity);
+            instantiatedBoss.transform.position = tiles[4, tiles.GetLength(1)-1].transform.position;
+            instantiatedBoss.GetComponent<ArbolinaBoss>().roomGenerator = this.GetComponent<RoomGenerator>();
+            instantiatedBoss.GetComponent<ArbolinaBoss>().gameManager = this.gameManager;
+            instantiatedBoss.transform.parent = transform;
+            bossArbolina_GO = instantiatedBoss;
+        }
     }
 
 
@@ -173,14 +194,22 @@ public class RoomGenerator : MonoBehaviour
     //Enemies Activated
     public void EnemiesAttack()
     {
-        for(int i = 0; i < enemies.Length; i++)
+        if(BossFightActive == false)
         {
-            if (enemies[i] != null)
+            for(int i = 0; i < enemies.Length; i++)
             {
+                if (enemies[i] != null)
+                {
 
-                enemies[i].EnemyTurn();
+                    enemies[i].EnemyTurn();
+                }
             }
         }
+        else
+        {
+            bossArbolina_GO.GetComponent<ArbolinaBoss>().BossAttack();
+        }
+        
     }
 
    

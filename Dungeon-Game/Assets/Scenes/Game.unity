@@ -249,6 +249,7 @@ MonoBehaviour:
   referenceOfRoomGenerator: []
   idRoomActive: 0
   player: {fileID: 412830495351619841, guid: 92835ee89b2d76445a52735941ae297f, type: 3}
+  playerScript: {fileID: 0}
   weapons:
   - {fileID: 11400000, guid: 3454e624d2123964f973a1c3900e832f, type: 2}
   - {fileID: 11400000, guid: 4735f9a3a3ef4184c917638e153c38b0, type: 2}

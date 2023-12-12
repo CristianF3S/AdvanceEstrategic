@@ -48,6 +48,7 @@ MonoBehaviour:
   tile: {fileID: 7106997055687485763, guid: 60cb3370eb8adef48bcb7fd3f6eb131d, type: 3}
   door: {fileID: 1064308708671891446, guid: 344cc540fe7e49444ac42d9609707e09, type: 3}
   doorsReferences: []
+  bossArbolina_GO: {fileID: 3010328236402258292, guid: 4f9b83723c349f8429215f7c7b0c3697, type: 3}
   gameManager: {fileID: 0}
   RoomID: 0
   BossRoom: 0

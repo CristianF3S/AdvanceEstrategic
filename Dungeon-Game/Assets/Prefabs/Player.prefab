@@ -104,9 +104,14 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   posX: 4
   posY: 5
+  weapon: {fileID: 0}
+  nameAttack: 
+  powerWeaponAttack: []
+  attackPosition: []
+  spritesWeapon: []
   life: 100
-  powerAttack: 20
-  quantityMovement: 1
+  powerAttack: 5
+  quantityMovement: 3
 --- !u!70 &6456611951881396243
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

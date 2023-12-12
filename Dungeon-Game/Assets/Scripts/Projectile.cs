@@ -41,6 +41,15 @@ public class Projectile : MonoBehaviour
                 hit.collider.GetComponent<Enemy>().ReceiveDamage(100);
             }
         }
+
+        if (hit.collider != null)
+        {
+            if (hit.collider.tag == "Boss")
+            {
+                print("Ataco");
+                hit.collider.GetComponent<ArbolinaBoss>().ReceiveDamage(100);
+            }
+        }
     }
 
 
