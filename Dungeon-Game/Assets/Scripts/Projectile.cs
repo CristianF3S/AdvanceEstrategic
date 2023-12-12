@@ -30,7 +30,7 @@ public class Projectile : MonoBehaviour
 
     void CastRay(Vector2 direction)
     {
-        float maxRayDistance = 1.5f;
+        float maxRayDistance = 0.5f;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxRayDistance, collisionLayer);
 
         if (hit.collider != null)

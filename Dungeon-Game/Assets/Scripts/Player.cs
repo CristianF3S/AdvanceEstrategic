@@ -62,11 +62,14 @@ public class Player : MonoBehaviour
     {
         for(int i = 0; i < attackPosition.Length; i++)
         {
-            GameObject projectile = Instantiate(weapon.projectile, new Vector2(posX + attackPosition[i].x, posY + attackPosition[i].y), Quaternion.identity);
-            projectile.GetComponent<Projectile>().posX = posX + (int)attackPosition[i].x;
-            projectile.GetComponent<Projectile>().posY = posY + (int)attackPosition[i].y;
-            projectile.GetComponent<Projectile>().gameManager = gameManager;
-            gameManager.PlayerTurnFinished();
+            if (posX + (int)attackPosition[i].x >= 0 && posX + (int)attackPosition[i].x < 8 && posY + (int)attackPosition[i].y < gameManager.referenceOfRoomGenerator[gameManager.idRoomActive].GetComponent<RoomGenerator>().tiles.GetLength(1) - 1)
+            {
+                GameObject projectile = Instantiate(weapon.projectile, new Vector2(posX + attackPosition[i].x, posY + attackPosition[i].y), Quaternion.identity);
+                projectile.GetComponent<Projectile>().posX = posX + (int)attackPosition[i].x;
+                projectile.GetComponent<Projectile>().posY = posY + (int)attackPosition[i].y;
+                projectile.GetComponent<Projectile>().gameManager = gameManager;
+                gameManager.PlayerTurnFinished();
+            }
         }
     }
 
