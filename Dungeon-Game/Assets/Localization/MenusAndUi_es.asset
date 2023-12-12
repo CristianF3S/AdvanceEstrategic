@@ -102,6 +102,18 @@ MonoBehaviour:
     m_Localized: Pausa
     m_Metadata:
       m_Items: []
+  - m_Id: 2963192999837696
+    m_Localized: Menu Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2963819507220480
+    m_Localized: Juego Terminado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2964953990955008
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

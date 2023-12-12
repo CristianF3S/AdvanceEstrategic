@@ -102,6 +102,18 @@ MonoBehaviour:
     m_Localized: Pause
     m_Metadata:
       m_Items: []
+  - m_Id: 2963192999837696
+    m_Localized: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2963819507220480
+    m_Localized: Game Over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2964953990955008
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
