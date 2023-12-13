@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
         spritesWeapon = weapon.spritesWeapon;
         posX = 4;
         posY = 1;
+        transform.position = gameManager.referenceOfRoomGenerator[gameManager.idRoomActive].GetComponent<RoomGenerator>().tiles[posX, posY].transform.position;
+        transform.position = new Vector2(transform.position.x, transform.position.y + 0.4f);
     }
 
     void Update()
@@ -47,7 +49,7 @@ public class Player : MonoBehaviour
                 {
                     posX = hit.collider.GetComponent<Tale>().posX;
                     posY = hit.collider.GetComponent<Tale>().posY;
-                    this.transform.position = hit.collider.transform.position;
+                    this.transform.position = new Vector2(hit.collider.transform.position.x, hit.collider.transform.position.y+0.4f);
                     gameManager.PlayerPlayed();
                     PlayerAttack1();
 

@@ -5,14 +5,19 @@ using UnityEngine;
 public class Tale : MonoBehaviour
 {
     Collider2D collider2D;
+    public Sprite[] sprites;
+    public Color transparente, white;
 
     //Tile dentification
     public int ID;
     public int posX, posY;
+    public SpriteRenderer sprite, sprite2;
 
     // Start is called before the first frame update
     void Start()
     {
+        sprite.sortingOrder -= posY;
+        sprite2.sortingOrder -= posY;
         collider2D = GetComponent<Collider2D>();
         collider2D.enabled = false;
         TilesAparience();
@@ -33,14 +38,20 @@ public class Tale : MonoBehaviour
 
     public void TilesAparience()
     {
-        if(posY == 0)
+        if(posY < 3)
         {
             ID = 0;
         }
         if(ID == 1)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+            this.gameObject.GetComponent<SpriteRenderer>().color = transparente;
+            sprite.sprite = sprites[Random.Range(0, 4)];
             collider2D.enabled = false;
+        }
+        else if(ID == 0)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = transparente;
+            sprite.sprite = sprites[Random.Range(4, 8)];
         }
 
     }
@@ -49,7 +60,7 @@ public class Tale : MonoBehaviour
     {
         if(ID != 1)
         {
-            GetComponent<SpriteRenderer>().color = Color.green;
+            GetComponent<SpriteRenderer>().color = white;
             collider2D.enabled = true;
         }
         
@@ -59,7 +70,7 @@ public class Tale : MonoBehaviour
     {
         if (ID != 1)
         {
-            GetComponent<SpriteRenderer>().color = Color.white;
+            GetComponent<SpriteRenderer>().color = transparente;
             collider2D.enabled = false;
 
         }

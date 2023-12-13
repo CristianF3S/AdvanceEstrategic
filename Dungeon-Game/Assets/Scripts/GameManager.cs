@@ -105,9 +105,9 @@ public class GameManager : MonoBehaviour
 
             camera.transform.position = new Vector3(4.5f, 4.5f, -10);
 
-            player.transform.position = new Vector3(4.4f, 0, 0);
+            player.transform.position = new Vector3(4.4f, 1.1f, 0);
             playerScript.posX = 4;
-            playerScript.posY = 0;
+            playerScript.posY = 1;
 
         }
         else if(DoorID == referenceOfRoomGenerator.Length - 1)
@@ -118,9 +118,9 @@ public class GameManager : MonoBehaviour
 
             camera.transform.position = new Vector3(4.5f, 4.5f, -10);
 
-            player.transform.position = new Vector3(4.4f, 0, 0);
+            player.transform.position = new Vector3(4.4f, 1.1f, 0);
             playerScript.posX = 4;
-            playerScript.posY = 0;
+            playerScript.posY = 1;
             //Activar Boss
         }
         else if(DoorID == 0)

@@ -130,11 +130,11 @@ public class RoomGenerator : MonoBehaviour
                 GameObject instantiatedTile = Instantiate(tile, new Vector2(c + spacex, f + spacey), Quaternion.identity);
                 instantiatedTile.GetComponent<Tale>().ReceiveDates(matrizTiles[c, f], c, f);
                 instantiatedTile.transform.parent = transform;
-                spacex += 0.1f;
+                spacex += 0.7f;
                 tiles[c,f] = instantiatedTile;
             }
             spacex = 0;
-            spacey += 0.1f;
+            spacey += 0.05f;
         }
 
         
