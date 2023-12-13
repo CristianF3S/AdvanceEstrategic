@@ -111,6 +111,10 @@ MonoBehaviour:
     m_Key: Language
     m_Metadata:
       m_Items: []
+  - m_Id: 3377706035576832
+    m_Key: Weapon
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
