@@ -187,15 +187,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 144821574250966837, guid: 624b7a08e09943f4a8b3dd1bbc259da1, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 144821574250966837, guid: 624b7a08e09943f4a8b3dd1bbc259da1, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 144821574250966837, guid: 624b7a08e09943f4a8b3dd1bbc259da1, type: 3}
       propertyPath: m_SortingLayerID
-      value: 1420053869
+      value: -1501136733
       objectReference: {fileID: 0}
     - target: {fileID: 6129906082083765559, guid: 624b7a08e09943f4a8b3dd1bbc259da1, type: 3}
       propertyPath: m_LocalScale.x
