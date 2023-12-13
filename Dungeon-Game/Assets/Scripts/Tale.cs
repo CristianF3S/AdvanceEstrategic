@@ -7,6 +7,7 @@ public class Tale : MonoBehaviour
     Collider2D collider2D;
     public Sprite[] sprites;
     public Color transparente, white;
+    public GameObject MovementTile;
 
     //Tile dentification
     public int ID;
@@ -20,6 +21,7 @@ public class Tale : MonoBehaviour
         sprite2.sortingOrder -= posY;
         collider2D = GetComponent<Collider2D>();
         collider2D.enabled = false;
+        MovementTile.SetActive(false);
         TilesAparience();
     }
 
@@ -60,7 +62,8 @@ public class Tale : MonoBehaviour
     {
         if(ID != 1)
         {
-            GetComponent<SpriteRenderer>().color = white;
+            //GetComponent<SpriteRenderer>().color = white;
+            MovementTile.SetActive(true);
             collider2D.enabled = true;
         }
         
@@ -70,7 +73,9 @@ public class Tale : MonoBehaviour
     {
         if (ID != 1)
         {
-            GetComponent<SpriteRenderer>().color = transparente;
+            //GetComponent<SpriteRenderer>().color = transparente;
+
+            MovementTile.SetActive(false);
             collider2D.enabled = false;
 
         }
