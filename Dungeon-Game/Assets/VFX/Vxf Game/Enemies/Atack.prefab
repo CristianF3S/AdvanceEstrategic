@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4945707815571746}
   m_Layer: 0
-  m_Name: ShockWave
+  m_Name: Atack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
