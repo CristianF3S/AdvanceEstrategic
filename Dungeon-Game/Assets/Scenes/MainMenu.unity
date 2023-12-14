@@ -142,8 +142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1341529221}
+  item: {fileID: 11400000, guid: 5d487def21ae19d47a32acda2b4b477a, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -151,6 +151,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &42606631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7861266126638376567, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &53203572 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7645434888629011734, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -184,6 +189,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7180073071178047346, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
   m_PrefabInstance: {fileID: 1898504838}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &105246215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3889778011486622804, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &142967416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3793076445313733048, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &153789438 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3551782653897322450, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -203,8 +218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1070688908}
+  item: {fileID: 11400000, guid: 5a7d09304d71f3d4b8e7fc0b577c0319, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -212,9 +227,24 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &164726829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4595766516484503840, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &196426437 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 118530219216467658, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &214142211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5788828354564590581, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &217822167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7706183126226934460, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
   m_PrefabInstance: {fileID: 1898504838}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &238049871 stripped
@@ -236,8 +266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 519070584}
+  item: {fileID: 11400000, guid: ff15ed913e31636438b583c599fc2cfd, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -264,8 +294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1566852499}
+  item: {fileID: 11400000, guid: 2061b72687e4f7e45ba3fbe1b9f14c4a, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -292,8 +322,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 350353264}
+  item: {fileID: 11400000, guid: 08a7d4ac90f768743be1a203f3241e7e, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -320,8 +350,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 910494477}
+  item: {fileID: 11400000, guid: c6e89e0497941b142a50a54a0b2fb7b1, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -399,8 +429,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 2066642490}
+  item: {fileID: 11400000, guid: 6f1d61ce727ba0549b3bf3c0bdb75cf9, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -408,6 +438,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &282378155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 881782339123122640, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &319689472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 971931944630708283, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -427,8 +462,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1036366188}
+  item: {fileID: 11400000, guid: 89950b1db1a23f04e9773e8265c12e1f, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -455,8 +490,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 816116341}
+  item: {fileID: 11400000, guid: 925738ea6f11886408a3e97ab294bd27, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -464,6 +499,26 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &331967743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9060196031497099839, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &350353264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9213985418228805531, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &385180079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5085092056562445541, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &388765237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2525839183859517558, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &438572130 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1032622553040375136, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -483,8 +538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 331967743}
+  item: {fileID: 11400000, guid: f9d441ee9570c724eabeeb65157ad962, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -492,6 +547,16 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &453255207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3409123873599992467, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &464678979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7272541075121134633, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &469938923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2828355824059534546, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -511,8 +576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 217822167}
+  item: {fileID: 11400000, guid: cd72cdbf7ca2c494187765da1b786d42, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -520,6 +585,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &470163871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055337090194169827, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &477812534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5039412036158481645, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -539,8 +609,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 2127129011}
+  item: {fileID: 11400000, guid: a86c26ec4c555ee489e042eb4e986231, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -548,6 +618,41 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &517556352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8875314108941398766, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &519070584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 794374467798098232, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &567244433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4505565954327286202, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &576913032 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6349906977673308256, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &577660051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7132225961464434719, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &583056553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5043846904423131660, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &590050747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5719921408302626315, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &603127898 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5054382181683936103, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -567,8 +672,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 214142211}
+  item: {fileID: 11400000, guid: ec00143fe1e6eff47bef0d06e4fcc0b3, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -576,6 +681,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &620762749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2124161698889291520, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &659346319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -669,6 +779,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ebc62c5171bb554ea05f186f9db3c08, type: 3}
+--- !u!1 &673893734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7798799426750991997, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &733688983 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3175977240540629269, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -688,8 +803,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 517556352}
+  item: {fileID: 11400000, guid: f6468cc9675cd9f489facf43d70e99a9, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -697,6 +812,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &749853636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1154592752912345572, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &751330764 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5732364836235915634, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -716,8 +836,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1749282836}
+  item: {fileID: 11400000, guid: 23a243ad85a0085418cec99d90ef6e14, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -744,8 +864,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 988179497}
+  item: {fileID: 11400000, guid: 6c1c039eb06f99f4fbbbfa723249c110, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -772,8 +892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 673893734}
+  item: {fileID: 11400000, guid: eb91ed0378b70d54dacf7942e14c1743, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -800,8 +920,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1938869932}
+  item: {fileID: 11400000, guid: 630e7debe2a55814aa95b5a62efc853c, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -828,8 +948,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1104688551}
+  item: {fileID: 11400000, guid: 67223fe7a26b6f44a8eebaaa9a372be9, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -837,6 +957,21 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &816116341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7878596686497254348, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &895561338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7912354680730192094, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &910494477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8774246791742602615, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &915175162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5790712203217993490, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -856,8 +991,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 583056553}
+  item: {fileID: 11400000, guid: c798bd3ba5948c34397f4cf78e47dab9, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -884,8 +1019,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 2022606844}
+  item: {fileID: 11400000, guid: 1f2032646888f1040ad5d65f9f4430c0, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1007,8 +1142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1454343761}
+  item: {fileID: 11400000, guid: dd7a8f6b947424c40a4c94e8a0ef9cff, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1016,6 +1151,31 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &964570961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 16217313428607740, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &966908570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5696783264121536904, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &988179497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7941269153086566287, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1036366188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8207613511267205147, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1070688908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7731548875333562150, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1076600055 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6891333941272719064, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -1035,8 +1195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 577660051}
+  item: {fileID: 11400000, guid: c0ee4c8f41d9de6438b0ee4e4ed59abf, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1044,6 +1204,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &1104688551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5444058390363572871, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1122878264 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8030572926250311582, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -1063,8 +1228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 105246215}
+  item: {fileID: 11400000, guid: 959e2cade1493644bbe1621642184e1c, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1092,7 +1257,7 @@ MonoBehaviour:
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
   itembuyedCorrectly: {fileID: 273734659}
-  item: {fileID: 11400000, guid: 4d9345461e604074a879b6e6ae8f6eae, type: 2}
+  item: {fileID: 11400000, guid: 4f38a2cc4d34ac845ae557a76d3bc202, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1119,8 +1284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1186032217}
+  item: {fileID: 11400000, guid: 11ab809ba16e7de4a81df1f14d46d48c, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1128,6 +1293,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &1186032217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7965189176676426932, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1195853847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6705900107181438256, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -1147,8 +1317,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1247768139}
+  item: {fileID: 11400000, guid: dce987cee75acc049b349ef1fd99a2eb, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1175,8 +1345,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 453255207}
+  item: {fileID: 11400000, guid: cd4feb32a8a984e4cb04db284c2f8cb6, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1203,8 +1373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 42606631}
+  item: {fileID: 11400000, guid: bd14a63927f481646a32a0185ffc9d68, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1231,8 +1401,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1263758103}
+  item: {fileID: 11400000, guid: 6e12088d3b9d1e94aba0079016ad0b49, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1259,8 +1429,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1281876144}
+  item: {fileID: 11400000, guid: 730b74799b8838c44b903c2470f14345, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1268,6 +1438,21 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &1247768139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2190365746537578213, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1248887864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1893573211963945969, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1263758103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7709030802851787430, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1271130474 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8168005857867664490, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -1287,8 +1472,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 164726829}
+  item: {fileID: 11400000, guid: 986bd9a3887e1984aa662655f4fea5f2, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1296,6 +1481,16 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &1281876144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4489669908815462967, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1341529221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1129015817464800521, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1351009426 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5135308450188100662, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -1315,8 +1510,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 749853636}
+  item: {fileID: 11400000, guid: 6e614f5fbaebc4a49be1aae926553e17, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1343,8 +1538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 470163871}
+  item: {fileID: 11400000, guid: 621e9e534d6474c4f80ca12ed0862fd7, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1371,8 +1566,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 282378155}
+  item: {fileID: 11400000, guid: 05f4e8cf5cc9fd945b1195ce8e6cb986, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1399,8 +1594,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1248887864}
+  item: {fileID: 11400000, guid: 4436a13745cef4d439a50fd236035e15, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1408,6 +1603,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &1454343761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7799316526714235653, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1462886878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7428187632878938044, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -1427,8 +1627,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 966908570}
+  item: {fileID: 11400000, guid: 68311239b41820246a6881d6f8c75ec5, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1455,8 +1655,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 576913032}
+  item: {fileID: 11400000, guid: 58e03b2206b93244da5b991e8053d606, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1483,8 +1683,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 567244433}
+  item: {fileID: 11400000, guid: 6d77ec6bfab501848bc40d57db4a201b, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1492,6 +1692,21 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &1518054742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1059389923732898941, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1566852499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2421392856057849907, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1582725605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3895275245643556882, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1610649670 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3423721307375978897, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -1687,8 +1902,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1582725605}
+  item: {fileID: 11400000, guid: 92bf720deaa718a4197bc25f9c1263c2, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1809,9 +2024,64 @@ MonoBehaviour:
   - {fileID: 1761730112}
   - {fileID: 238049875}
   - {fileID: 1933526534}
+  - {fileID: 1752512116}
+  - {fileID: 2088717536}
+  - {fileID: 255427162}
+  - {fileID: 1205137359}
+  - {fileID: 2049961552}
+  - {fileID: 2134512571}
+  - {fileID: 329568894}
+  - {fileID: 1352891421}
+  - {fileID: 256476031}
+  - {fileID: 797875969}
+  - {fileID: 1076600057}
+  - {fileID: 751330766}
+  - {fileID: 18921200}
+  - {fileID: 1122878266}
+  - {fileID: 2111279866}
+  - {fileID: 797046931}
+  - {fileID: 733688985}
+  - {fileID: 799911248}
+  - {fileID: 944206946}
+  - {fileID: 1169407991}
+  - {fileID: 963004001}
+  - {fileID: 1382774850}
+  - {fileID: 1351009428}
+  - {fileID: 2101943307}
+  - {fileID: 915175164}
+  - {fileID: 763342461}
+  - {fileID: 264712507}
+  - {fileID: 1462886880}
+  - {fileID: 1195853849}
+  - {fileID: 319689474}
+  - {fileID: 153789440}
+  - {fileID: 1663050649}
+  - {fileID: 1232742066}
+  - {fileID: 1217963486}
+  - {fileID: 1831934718}
+  - {fileID: 1858424949}
+  - {fileID: 2116776102}
+  - {fileID: 1789168415}
+  - {fileID: 1943134579}
+  - {fileID: 1476719389}
+  - {fileID: 1464581748}
+  - {fileID: 438572132}
+  - {fileID: 1445011063}
+  - {fileID: 1271130476}
+  - {fileID: 1209919952}
+  - {fileID: 2091056843}
+  - {fileID: 276847445}
+  - {fileID: 477812536}
+  - {fileID: 603127900}
+  - {fileID: 469938925}
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
   Dinero: 0
+--- !u!1 &1749282836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 582444715447617125, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1752512114 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6353612835586983469, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -1831,8 +2101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 2046831652}
+  item: {fileID: 11400000, guid: 444b50d0049504b47b5f44d10aa47b59, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1860,7 +2130,7 @@ MonoBehaviour:
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
   itembuyedCorrectly: {fileID: 1610649670}
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: ea782ad7e7dabdf4498e452d8a430b4a, type: 2}
   name: 
   ID: 3
   cost: 0
@@ -1887,8 +2157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1972862868}
+  item: {fileID: 11400000, guid: 0293c42f94958794d89959aab7ea1a0a, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1915,8 +2185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 385180079}
+  item: {fileID: 11400000, guid: ea621d7056a0bce4380e6d5a7c507b4b, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -1924,6 +2194,16 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &1835068539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7250520276518913440, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1848933884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 157427501355051975, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1858424947 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1466828219196212491, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -1943,8 +2223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1518054742}
+  item: {fileID: 11400000, guid: f9b22c21ce3d78747bea21470234e036, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -7233,8 +7513,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 620762749}
+  item: {fileID: 11400000, guid: f9f0dd27eea862544b9d2acca110b64e, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -7242,6 +7522,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &1938869932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1169313990401662904, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1943134577 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5224679083121734911, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -7261,8 +7546,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 464678979}
+  item: {fileID: 11400000, guid: 4e7f36f540505c74d9632af57a1f7650, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -7270,6 +7555,21 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &1972862868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3282022811580142235, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2022606844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4715627745567966376, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2046831652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2375135438774180786, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2049961550 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6475389656166246920, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -7289,8 +7589,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1835068539}
+  item: {fileID: 11400000, guid: e626d039ae8eb8e47ac01efe544939e4, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -7298,6 +7598,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &2066642490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4378777309872143887, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2088717534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2903827330701077636, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -7317,8 +7622,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 142967416}
+  item: {fileID: 11400000, guid: 15deeaf8124d57546a79b479cfa8283d, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -7345,8 +7650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 388765237}
+  item: {fileID: 11400000, guid: af9f04d6a74cbc24fa80c6762827b876, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -7373,8 +7678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 964570961}
+  item: {fileID: 11400000, guid: 7b97424b0fef7b94daf9a42db8af21a6, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -7401,8 +7706,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 1848933884}
+  item: {fileID: 11400000, guid: fb513e6403865b248bfcfb2ce84f66ac, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -7429,8 +7734,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 895561338}
+  item: {fileID: 11400000, guid: 36c659ef72e5d304782871666842ac5a, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -7458,7 +7763,7 @@ MonoBehaviour:
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
   itembuyedCorrectly: {fileID: 89930689}
-  item: {fileID: 11400000, guid: 4ba1b46e1c775f348aa6830698414672, type: 2}
+  item: {fileID: 11400000, guid: 9dd370f4f596d14488f36551d667002d, type: 2}
   name: 
   ID: 0
   cost: 0
@@ -7466,6 +7771,11 @@ MonoBehaviour:
   Movimiento: 0
   life: 0
   powerAttack: 0
+--- !u!1 &2127129011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3237961489700158953, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+  m_PrefabInstance: {fileID: 1898504838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2134512569 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6967361689721948939, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
@@ -7485,8 +7795,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataObject: {fileID: 0}
   playerData: {fileID: 0}
-  itembuyedCorrectly: {fileID: 0}
-  item: {fileID: 0}
+  itembuyedCorrectly: {fileID: 590050747}
+  item: {fileID: 11400000, guid: 8d64d66cdc6502842860b5b7d4ba0ab6, type: 2}
   name: 
   ID: 0
   cost: 0
