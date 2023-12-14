@@ -52,4 +52,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   RoomID: 0
   BossRoom: 0
+  itemsBuyed: []
+  itemCollectable: {fileID: 6366604063491196292, guid: d350f2d492203d34aaac45e7905d5b57, type: 3}
   enemies: []
+  BossFightActive: 0

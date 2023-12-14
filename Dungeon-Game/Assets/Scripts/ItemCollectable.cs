@@ -7,8 +7,8 @@ public class ItemCollectable : MonoBehaviour
     public LayerMask collisionLayer;
     public Items item;
 
-    public Sprite marco;
-    public Sprite itemSprite;
+    public GameObject marco;
+    public GameObject itemSprite;
 
     public int Movimiento;
     public float life;
@@ -18,8 +18,8 @@ public class ItemCollectable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        marco = item.marcos[item.nivel];
-        itemSprite = item.sprite;
+        marco.GetComponent<SpriteRenderer>().sprite = item.marcos[item.nivel];
+        itemSprite.GetComponent<SpriteRenderer>().sprite = item.sprite;
 
         Movimiento = item.Movimiento;
         life = item.life;
@@ -49,6 +49,7 @@ public class ItemCollectable : MonoBehaviour
                 hit.collider.gameObject.GetComponent<Player>().quantityMovement += Movimiento;
                 hit.collider.gameObject.GetComponent<Player>().powerAttack += powerAttack;
                 hit.collider.gameObject.GetComponent<Player>().life += life;
+                Destroy(this.gameObject);
             }
         }
     }
