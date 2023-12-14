@@ -2323,7 +2323,6 @@ GameObject:
   - component: {fileID: 8867520336550155171}
   - component: {fileID: 1699892879189314793}
   - component: {fileID: 3591420015611057707}
-  - component: {fileID: 8312648471577924600}
   m_Layer: 5
   m_Name: ButtonItem (1)
   m_TagString: Untagged
@@ -2390,24 +2389,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8312648471577924600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3149642413491440320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03853df231d9b3f4ebfa1a0296a0ace1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  buyed: 0
-  spriteItem: {fileID: 0}
-  Movimiento: 0
-  life: 0
-  powerAttack: 0
 --- !u!1 &3248103889195865986
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,7 +4725,6 @@ GameObject:
   - component: {fileID: 6947992510036015142}
   - component: {fileID: 1429503202576062189}
   - component: {fileID: 4857919370572308462}
-  - component: {fileID: 8750093422530777445}
   m_Layer: 5
   m_Name: ButtonItem (2)
   m_TagString: Untagged
@@ -4811,24 +4791,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8750093422530777445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6368016469691191947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03853df231d9b3f4ebfa1a0296a0ace1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  buyed: 0
-  spriteItem: {fileID: 0}
-  Movimiento: 0
-  life: 0
-  powerAttack: 0
 --- !u!1 &6439038136165394172
 GameObject:
   m_ObjectHideFlags: 0
@@ -6989,7 +6951,6 @@ GameObject:
   - component: {fileID: 4750228015616486476}
   - component: {fileID: 1192021816192958084}
   - component: {fileID: 1650462506002911227}
-  - component: {fileID: 6838297708567298190}
   m_Layer: 5
   m_Name: ButtonItem (3)
   m_TagString: Untagged
@@ -7056,24 +7017,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6838297708567298190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8836439367594986264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03853df231d9b3f4ebfa1a0296a0ace1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  buyed: 0
-  spriteItem: {fileID: 0}
-  Movimiento: 0
-  life: 0
-  powerAttack: 0
 --- !u!1 &9002803632492125558
 GameObject:
   m_ObjectHideFlags: 0

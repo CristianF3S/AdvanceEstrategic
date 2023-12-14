@@ -19,8 +19,7 @@ public class UIManagment : MonoBehaviour
 
     public void StartGame()
     {
-
-        StartCoroutine(FadeIn("Game"));
+        SceneManager.LoadScene("Game");
     }
 
     public void QuitGame()
