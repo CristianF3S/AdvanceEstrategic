@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public int[] weaponLevel;
 
 
+    public GameObject objetoBuscado;
 
 
     [SerializeField] MovementCard_SO[] movementCard_SO; //Tener los 3 Card Movement seteados
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        objetoBuscado = GameObject.Find("Data");
         numberOfRooms = Random.Range(4, 7);
         referenceOfRoomGenerator = new GameObject[numberOfRooms];
         idRoomActive = 0;

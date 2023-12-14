@@ -111,7 +111,7 @@ MonoBehaviour:
   spritesWeapon: []
   life: 100
   powerAttack: 5
-  quantityMovement: 1
+  quantityMovement: 2
 --- !u!70 &6456611951881396243
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
