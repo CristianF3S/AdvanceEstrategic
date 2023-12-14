@@ -15,9 +15,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] Weapon[] weapons;
     public int weaponSelected;
     public int[] weaponLevel;
+    bool weaponActive;
 
+    //Items
+    public Items[] items;
+    public List<Items> itemsBuyed;
 
-    public GameObject objetoBuscado;
+    public GameObject dataGame;
+    public PlayerData dataPlayer;
 
 
     [SerializeField] MovementCard_SO[] movementCard_SO; //Tener los 3 Card Movement seteados
@@ -31,11 +36,26 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objetoBuscado = GameObject.Find("Data");
+        dataGame = GameObject.Find("Data");
+        dataPlayer = dataGame.GetComponent<PlayerData>();
+        weaponActive = true;
+        //Items in game
+        for (int i = 0; i < items.Length; i++)
+        {
+            foreach(int ID in dataPlayer.items)
+            {
+                if (items[i].ID == ID)
+                {
+                    itemsBuyed.Add(items[i]);
+                }
+            }
+        }
+
         numberOfRooms = Random.Range(4, 7);
         referenceOfRoomGenerator = new GameObject[numberOfRooms];
         idRoomActive = 0;
         GenerateRooms();
+        
         StartCoroutine(pruebas());
     }
 
@@ -47,6 +67,7 @@ public class GameManager : MonoBehaviour
             referenceOfRoomGenerator[c] = instantiatedTile;
             instantiatedTile.transform.parent = transform;
             instantiatedTile.GetComponent<RoomGenerator>().RoomID = c;
+            instantiatedTile.GetComponent<RoomGenerator>().itemsBuyed = this.itemsBuyed;
 
             instantiatedTile.GetComponent<RoomGenerator>().gameManager = this.GetComponent<GameManager>();
 
@@ -91,6 +112,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         PlayerTurn();
     }
+
 
     public void MoveTheCamera()
     {
