@@ -49,6 +49,7 @@ public class ItemCollectable : MonoBehaviour
                 hit.collider.gameObject.GetComponent<Player>().quantityMovement += Movimiento;
                 hit.collider.gameObject.GetComponent<Player>().powerAttack += powerAttack;
                 hit.collider.gameObject.GetComponent<Player>().life += life;
+                Destroy(this.gameObject);
             }
         }
     }
