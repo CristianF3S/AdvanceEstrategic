@@ -41,10 +41,7 @@ public class Projectile : MonoBehaviour
                 print("Ataco");
                 hit.collider.GetComponent<Enemy>().ReceiveDamage(powerAttack);
             }
-        }
 
-        if (hit.collider != null)
-        {
             if (hit.collider.tag == "Boss")
             {
                 print("Ataco");

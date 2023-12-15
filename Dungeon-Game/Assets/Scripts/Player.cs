@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public GameManager gameManager;
     public int posX = 4;
     public int posY = 5;
+    public GameObject efectoHit;
 
     //Weapon
     public Weapon weapon;
@@ -89,12 +90,20 @@ public class Player : MonoBehaviour
     public void ReceiveDamage(float damage)
     {
         life -= damage;
+        StartCoroutine(Efectos());
+        
+    }
+
+    IEnumerator Efectos()
+    {
+        efectoHit.SetActive(true);
+        yield return new WaitForSeconds(1);
+        efectoHit.SetActive(false); 
         if (life <= 0)
         {
             Destroy(this.gameObject);
         }
     }
-
     
 
 

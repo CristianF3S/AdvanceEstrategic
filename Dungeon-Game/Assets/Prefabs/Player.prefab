@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1501136733
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 0.80100495, b: 0.56981134, a: 0}
   m_FlipX: 0
@@ -105,6 +105,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   posX: 4
   posY: 5
+  efectoHit: {fileID: 1141736349608460336}
   weapon: {fileID: 0}
   nameAttack: 
   powerWeaponAttack: []
@@ -160,6 +161,18 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2276711626918933718, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391770844947296156, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591565617775614811, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+      propertyPath: m_Intensity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7241017724513399752, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.264
@@ -212,6 +225,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7339451720142065117, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339451720142065117, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+      propertyPath: m_Color.r
+      value: 0.654902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339451720142065117, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+      propertyPath: m_Intensity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9194899825287536900, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
       propertyPath: m_Name
       value: Character01
@@ -221,6 +246,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+--- !u!1 &1141736349608460336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2276711626918933718, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+  m_PrefabInstance: {fileID: 1171149211242165478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8375992998873057070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7241017724513399752, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}

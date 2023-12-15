@@ -27,7 +27,7 @@ public class Projectile_BossAttack : MonoBehaviour
             if (hit.collider.tag == "Player")
             {
                 print("Ataco");
-                hit.collider.GetComponent<Player>().ReceiveDamage(100);
+                hit.collider.GetComponent<Player>().ReceiveDamage(10);
             }
         }
     }

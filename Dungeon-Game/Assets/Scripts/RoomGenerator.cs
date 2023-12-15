@@ -208,7 +208,7 @@ public class RoomGenerator : MonoBehaviour
                 while (true)
                 {
                     int x = Random.Range(0, 8);
-                    int y = Random.Range(5, tiles.GetLength(1));
+                    int y = Random.Range(5, tiles.GetLength(1)-3);
                     if (tiles[x,y] != null && tiles[x, y].GetComponent<Tale>().ID != 1)
                     {
                         GameObject instantiatedEnemy = Instantiate(Enemy[Random.Range(0,Enemy.Length)], tiles[x,y].transform.position, Quaternion.identity);

@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public GameObject dataGame;
     public PlayerData dataPlayer;
+    public GameObject efectoHit;
 
     public LayerMask collisionLayer;
     public int x, y;
@@ -146,12 +147,21 @@ public class Enemy : MonoBehaviour
     public void ReceiveDamage(float damage)
     {
         life -= damage;
+        StartCoroutine(Efectos());
+    }
+    IEnumerator Efectos()
+    {
+        efectoHit.SetActive(true);
+        yield return new WaitForSeconds(1);
+        efectoHit.SetActive(false);
+        yield return new WaitForSeconds(1);
         if (life <= 0)
         {
             dataPlayer.dinero += Random.Range(1, 4);
             Destroy(this.gameObject);
         }
+
     }
 
-    
+
 }

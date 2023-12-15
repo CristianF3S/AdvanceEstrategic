@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataGame: {fileID: 0}
   dataPlayer: {fileID: 0}
+  efectoHit: {fileID: 1913249059951381374}
   collisionLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -213,6 +214,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 683f4ea60b3a8ae40baa6f1efc43868f, type: 3}
+--- !u!1 &1913249059951381374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2080657959349622411, guid: 683f4ea60b3a8ae40baa6f1efc43868f, type: 3}
+  m_PrefabInstance: {fileID: 455640375908834805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5441534669741595518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5608939158039201419, guid: 683f4ea60b3a8ae40baa6f1efc43868f, type: 3}

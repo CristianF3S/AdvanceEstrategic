@@ -113,10 +113,8 @@ public class GameManager : MonoBehaviour
     public void PlayerPlayed()
     {
         referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().DesactivePosibleToMove();
-        if(referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().BossFightActive != true)
-        {
-            MoveTheCamera();
-        }
+        StartCoroutine(WaitMoveCamera());
+        
     }
 
     public void PlayerTurnFinished()
@@ -162,7 +160,7 @@ public class GameManager : MonoBehaviour
             idRoomActive = DoorID;
             referenceOfRoomGenerator[idRoomActive].SetActive(true);
 
-            camera.transform.position = new Vector3(4.85f, 4.5f, -10);
+            camera.transform.position = new Vector3(4.85f, 4f, -10);
 
             
             playerScript.posX = 4;
@@ -239,4 +237,12 @@ public class GameManager : MonoBehaviour
         
     }
 
+    IEnumerator WaitMoveCamera()
+    {
+        yield return new WaitForSeconds(2);
+        if (referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().BossFightActive != true)
+        {
+            MoveTheCamera();
+        }
+    }
 }
