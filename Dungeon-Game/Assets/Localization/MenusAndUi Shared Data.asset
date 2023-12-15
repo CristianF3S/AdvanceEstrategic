@@ -115,6 +115,10 @@ MonoBehaviour:
     m_Key: Weapon
     m_Metadata:
       m_Items: []
+  - m_Id: 4017364817936384
+    m_Key: Win
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
