@@ -67,6 +67,7 @@ public class RoomGenerator : MonoBehaviour
                 {
                     GameObject instatiateItem = Instantiate(itemCollectable, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y + 0.2f), Quaternion.identity);
                     instatiateItem.GetComponent<ItemCollectable>().item = itemsBuyed[Random.Range(0, itemsBuyed.Count)];
+                    instatiateItem.GetComponent<ItemCollectable>().gameManager = this.gameManager;
                     print("IntanciarItem");
                     break;
                 }
