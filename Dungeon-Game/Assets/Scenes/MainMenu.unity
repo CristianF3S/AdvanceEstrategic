@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a3a2aca83d68c49b88fe439a63dd4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: 00000000010000000200000003000000
+  items: 390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000
   dinero: 100
 --- !u!4 &271729898
 Transform:
@@ -3850,6 +3850,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848192001225744953, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2030157407410750154, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2105224630552173620, guid: 0f882f10ea892254e956c79906cdaccc, type: 3}
