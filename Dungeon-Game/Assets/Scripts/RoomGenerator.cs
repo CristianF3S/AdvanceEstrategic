@@ -115,7 +115,25 @@ public class RoomGenerator : MonoBehaviour
                 }
             }
 
-            
+            while (true)
+            {
+                x = Random.Range(0, 8);
+                y = tiles.GetLength(1) - 1;
+                if (tiles[x, y].GetComponent<Tale>().ID != 1)
+                {
+                    GameObject instantiatedDoor = Instantiate(door, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y), Quaternion.identity);
+                    instantiatedDoor.GetComponent<Door>().DoorID = gameManager.referenceOfRoomGenerator.Length - 1;
+                    instantiatedDoor.GetComponent<Door>().posX = x;
+                    instantiatedDoor.GetComponent<Door>().posY = y;
+                    instantiatedDoor.GetComponent<Door>().gameManager = gameManager;
+                    instantiatedDoor.transform.parent = transform;
+                    tiles[x, y].GetComponent<Tale>().ID = 3;
+                    break;
+                }
+                s += 3;
+            }
+
+
         }
         else if(RoomID != 0 && RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
         {
@@ -154,7 +172,7 @@ public class RoomGenerator : MonoBehaviour
         {
             for(int i = 0; i < 8; i++)
             {
-                matrizTiles[i, matrizTiles.GetLength(1)-1] = 1;
+                matrizTiles[i, matrizTiles.GetLength(1)-1] = 5;
             } 
         }
     }

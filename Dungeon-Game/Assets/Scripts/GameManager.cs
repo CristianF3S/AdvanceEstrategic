@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour
             idRoomActive = DoorID;
             referenceOfRoomGenerator[idRoomActive].SetActive(true);
 
-            camera.transform.position = new Vector3(4.5f, 4.5f, -10);
+            camera.transform.position = new Vector3(4.85f, 4.5f, -10);
 
             player.transform.position = new Vector3(4.4f, 1.1f, 0);
             playerScript.posX = 4;
@@ -162,7 +162,7 @@ public class GameManager : MonoBehaviour
             idRoomActive = DoorID;
             referenceOfRoomGenerator[idRoomActive].SetActive(true);
 
-            camera.transform.position = new Vector3(4.5f, 4.5f, -10);
+            camera.transform.position = new Vector3(4.85f, 4.5f, -10);
 
             
             playerScript.posX = 4;

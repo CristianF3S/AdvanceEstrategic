@@ -154,6 +154,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b5150f66948c6a5468aabecf3f41a475, type: 3}
   - {fileID: 21300000, guid: 6b4c07bc280087f43b71ee7195cf2d82, type: 3}
   - {fileID: 21300000, guid: 02ff85c85ff6ddc4487bdc981edc1705, type: 3}
+  - {fileID: 21300000, guid: 9cd7a5aab8657b044b715a29f4c8f720, type: 3}
   transparente: {r: 0, g: 0, b: 0, a: 0}
   white: {r: 1, g: 1, b: 1, a: 0.49019608}
   MovementTile: {fileID: 7308134126330971268}

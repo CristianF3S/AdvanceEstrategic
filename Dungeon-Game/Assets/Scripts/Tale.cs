@@ -55,6 +55,12 @@ public class Tale : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().color = transparente;
             sprite.sprite = sprites[Random.Range(3, 8)];
         }
+        else if (ID == 5)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = transparente;
+            sprite.sprite = sprites[8];
+            collider2D.enabled = false;
+        }
 
     }
 
