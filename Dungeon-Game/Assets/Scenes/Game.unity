@@ -1820,6 +1820,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1283720574}
   - component: {fileID: 1283720573}
+  - component: {fileID: 1283720575}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1839,6 +1840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a39e93493e45644ca825f57ab7f239c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlDeCamara: {fileID: 1283720575}
   camera: {fileID: 519420028}
   roomGeneratorObj: {fileID: 2227589425837460032, guid: f0b9be3e1b61cab43b296b0828e42597, type: 3}
   referenceOfRoomGenerator: []
@@ -1908,6 +1910,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a86c26ec4c555ee489e042eb4e986231, type: 2}
   - {fileID: 11400000, guid: ec00143fe1e6eff47bef0d06e4fcc0b3, type: 2}
   - {fileID: 11400000, guid: cd72cdbf7ca2c494187765da1b786d42, type: 2}
+  - {fileID: 11400000, guid: 05865ce9719263c4e9c9ee3e1b548c99, type: 2}
+  - {fileID: 11400000, guid: 48bb82ff7d4ead6448d6c398d2220b65, type: 2}
+  - {fileID: 11400000, guid: 4fdece6970ce7e64284864b2e2f2edf2, type: 2}
+  - {fileID: 11400000, guid: 8fd6fafa39dc2cd4385bd02b52a4e632, type: 2}
+  - {fileID: 11400000, guid: 81d7f12f302d2d6408d9b3ae92f91313, type: 2}
+  - {fileID: 11400000, guid: 58c7d65e31d5e8140b12fc52d121ffc9, type: 2}
+  - {fileID: 11400000, guid: 5f5933f25caa1d047bd04d8426d4345c, type: 2}
+  - {fileID: 11400000, guid: 1ae2f26e1a0ecf14585678a918efc87e, type: 2}
+  - {fileID: 11400000, guid: 066edfdbf51053d4fa7f49a5bb3f634c, type: 2}
+  - {fileID: 11400000, guid: 40a313110c8f23d4eabf015d1a49139b, type: 2}
+  - {fileID: 11400000, guid: 2061b72687e4f7e45ba3fbe1b9f14c4a, type: 2}
   itemsBuyed: []
   imageItemUI: {fileID: 7015659313016487070, guid: 004fb792b59b24341b9ff0634909647c, type: 3}
   parentimageItemUI: {fileID: 1326674863}
@@ -1954,6 +1967,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1283720575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283720572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b756c002eb6aea44864fad4db0ac685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 519420031}
+  duracionDelMovimiento: 0.5
 --- !u!1 &1314357155
 GameObject:
   m_ObjectHideFlags: 0

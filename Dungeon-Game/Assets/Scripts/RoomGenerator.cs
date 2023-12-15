@@ -48,7 +48,7 @@ public class RoomGenerator : MonoBehaviour
         }
         matrizTiles = new int[x, y];
         tiles = new GameObject[x, y];
-        enemies = new Enemy[3];
+        enemies = new Enemy[6];
         GenerateTerrain();
         GenerateTales();
         GenerateEnemy();
@@ -57,7 +57,7 @@ public class RoomGenerator : MonoBehaviour
     }
     public void GenerateItems()
     {
-        if(RoomID == 0 || RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
+        if(RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
         {
             while (true)
             {
@@ -65,6 +65,7 @@ public class RoomGenerator : MonoBehaviour
                 int y = Random.Range(5, tiles.GetLength(1));
                 if(tiles[x,y].GetComponent<Tale>().ID == 0 && tiles[x, y] != null)
                 {
+                    print("TileID = " + tiles[x, y].GetComponent<Tale>().ID);
                     GameObject instatiateItem = Instantiate(itemCollectable, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y + 0.2f), Quaternion.identity);
                     instatiateItem.GetComponent<ItemCollectable>().item = itemsBuyed[Random.Range(0, itemsBuyed.Count -1)];
                     instatiateItem.GetComponent<ItemCollectable>().gameManager = this.gameManager;
@@ -175,7 +176,7 @@ public class RoomGenerator : MonoBehaviour
         if (RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
         {
             int s = 10;
-            for(int i = 0; i<3; i++)
+            for(int i = 0; i<6; i++)
             {
                 while (true)
                 {

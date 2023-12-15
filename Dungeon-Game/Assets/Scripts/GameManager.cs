@@ -6,6 +6,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private ControlDeCamara controlDeCamara;
     [SerializeField] GameObject camera;
     [SerializeField] GameObject roomGeneratorObj;
     public GameObject[] referenceOfRoomGenerator;
@@ -135,7 +136,7 @@ public class GameManager : MonoBehaviour
 
     public void MoveTheCamera()
     {
-        camera.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + 1.1f, camera.transform.position.z);
+        controlDeCamara.MoveTheCamera();
     }
 
     public void ChangeTheRoom(int DoorID)

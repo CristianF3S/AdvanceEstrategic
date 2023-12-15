@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void EnemyTurn()
@@ -132,6 +132,8 @@ public class Enemy : MonoBehaviour
         float maxRayDistance = 1.5f;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxRayDistance, collisionLayer);
 
+
+//        Debug.DrawRay(transform.position, direction * maxRayDistance, Color.red);
         if (hit.collider != null)
         {
             if(hit.collider.tag == "Player")
@@ -146,7 +148,7 @@ public class Enemy : MonoBehaviour
         life -= damage;
         if (life <= 0)
         {
-            dataPlayer.dinero = Random.Range(1, 4);
+            dataPlayer.dinero += Random.Range(1, 4);
             Destroy(this.gameObject);
         }
     }
