@@ -23,6 +23,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2c6339dc5b8d1064aba35ab42d5d2401, type: 3}
   buyed: 0
   spriteItem: {fileID: 0}
-  Movimiento: 1
-  life: 0
+  Movimiento: 0
+  life: 1
   powerAttack: 0

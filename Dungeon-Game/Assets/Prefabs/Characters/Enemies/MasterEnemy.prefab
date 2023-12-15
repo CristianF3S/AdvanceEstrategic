@@ -5031,13 +5031,33 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 1817684891897198, guid: 89b062e5fd7838244a3daf090630c551, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1150934714579380, guid: 89b062e5fd7838244a3daf090630c551, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7045606140721268390}
   m_SourcePrefab: {fileID: 100100000, guid: 89b062e5fd7838244a3daf090630c551, type: 3}
 --- !u!4 &2109509729027533574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4164528543026860, guid: 89b062e5fd7838244a3daf090630c551, type: 3}
   m_PrefabInstance: {fileID: 2110130428502107562}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2111245621687884830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1150934714579380, guid: 89b062e5fd7838244a3daf090630c551, type: 3}
+  m_PrefabInstance: {fileID: 2110130428502107562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!210 &7045606140721268390
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111245621687884830}
+  m_Enabled: 1
+  m_SortingLayerID: -1501136733
+  m_SortingLayer: 2
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1001 &2487758100900937550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5105,13 +5125,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2353600328335836179, guid: 90c9bd41123213f43a0f4de1aef6d0b8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8954268854805610160}
   m_SourcePrefab: {fileID: 100100000, guid: 90c9bd41123213f43a0f4de1aef6d0b8, type: 3}
 --- !u!4 &157592764227790717 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2353600328335939635, guid: 90c9bd41123213f43a0f4de1aef6d0b8, type: 3}
   m_PrefabInstance: {fileID: 2487758100900937550}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &157592764228287325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2353600328335836179, guid: 90c9bd41123213f43a0f4de1aef6d0b8, type: 3}
+  m_PrefabInstance: {fileID: 2487758100900937550}
+  m_PrefabAsset: {fileID: 0}
+--- !u!210 &8954268854805610160
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157592764228287325}
+  m_Enabled: 1
+  m_SortingLayerID: -1501136733
+  m_SortingLayer: 2
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1001 &4314185034896606090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5198,10 +5238,30 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4945707815571746, guid: fceb72997cc80be409b9e1952fd7fa85, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1567246115439354655}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1714681308540598, guid: fceb72997cc80be409b9e1952fd7fa85, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3728252752642572103}
   m_SourcePrefab: {fileID: 100100000, guid: fceb72997cc80be409b9e1952fd7fa85, type: 3}
 --- !u!4 &4309525340278166184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4945707815571746, guid: fceb72997cc80be409b9e1952fd7fa85, type: 3}
   m_PrefabInstance: {fileID: 4314185034896606090}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4312485887211334972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1714681308540598, guid: fceb72997cc80be409b9e1952fd7fa85, type: 3}
+  m_PrefabInstance: {fileID: 4314185034896606090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!210 &3728252752642572103
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4312485887211334972}
+  m_Enabled: 1
+  m_SortingLayerID: -1501136733
+  m_SortingLayer: 2
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
