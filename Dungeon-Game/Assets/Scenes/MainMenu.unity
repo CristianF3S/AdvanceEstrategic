@@ -2144,7 +2144,7 @@ MonoBehaviour:
   itembuyedCorrectly: {fileID: 1610649670}
   item: {fileID: 11400000, guid: ea782ad7e7dabdf4498e452d8a430b4a, type: 2}
   name: 
-  ID: 3
+  ID: 0
   cost: 0
   buyed: 0
   Movimiento: 0
