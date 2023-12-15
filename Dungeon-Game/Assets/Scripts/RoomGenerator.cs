@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RoomGenerator : MonoBehaviour
 {
-    [SerializeField] private GameObject Enemy;
+    [SerializeField] private GameObject[] Enemy;
     [SerializeField] private GameObject tile;
     [SerializeField] private GameObject door;
     [SerializeField] public GameObject[] doorsReferences;
@@ -63,10 +63,10 @@ public class RoomGenerator : MonoBehaviour
             {
                 int x = Random.Range(0, 8);
                 int y = Random.Range(5, tiles.GetLength(1));
-                if(tiles[x,y].GetComponent<Tale>().ID == 0)
+                if(tiles[x,y].GetComponent<Tale>().ID == 0 && tiles[x, y] != null)
                 {
                     GameObject instatiateItem = Instantiate(itemCollectable, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y + 0.2f), Quaternion.identity);
-                    instatiateItem.GetComponent<ItemCollectable>().item = itemsBuyed[Random.Range(0, itemsBuyed.Count)];
+                    instatiateItem.GetComponent<ItemCollectable>().item = itemsBuyed[Random.Range(0, itemsBuyed.Count -1)];
                     instatiateItem.GetComponent<ItemCollectable>().gameManager = this.gameManager;
                     print("IntanciarItem");
                     break;
@@ -183,7 +183,7 @@ public class RoomGenerator : MonoBehaviour
                     int y = Random.Range(5, tiles.GetLength(1));
                     if (tiles[x,y] != null && tiles[x, y].GetComponent<Tale>().ID != 1)
                     {
-                        GameObject instantiatedEnemy = Instantiate(Enemy, tiles[x,y].transform.position, Quaternion.identity);
+                        GameObject instantiatedEnemy = Instantiate(Enemy[Random.Range(0,2)], tiles[x,y].transform.position, Quaternion.identity);
                         instantiatedEnemy.GetComponent<Enemy>().x = tiles[x, y].GetComponent<Tale>().posX;
                         instantiatedEnemy.GetComponent<Enemy>().y = tiles[x, y].GetComponent<Tale>().posY;
                         instantiatedEnemy.GetComponent<Enemy>().roomGenerator = this.GetComponent<RoomGenerator>();
