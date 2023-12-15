@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03853df231d9b3f4ebfa1a0296a0ace1, type: 3}
-  m_Name: 9 Daga venenosa
+  m_Name: 67 Daga venenosa
   m_EditorClassIdentifier: 
   name: Daga venenosa
-  ID: 9
+  ID: 67
   cost: 40
   nivel: 0
   sprite: {fileID: 21300000, guid: 96997456b8aeb2343b3d349e67e8dc71, type: 3}
