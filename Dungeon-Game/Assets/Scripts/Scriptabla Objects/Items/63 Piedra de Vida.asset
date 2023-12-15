@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03853df231d9b3f4ebfa1a0296a0ace1, type: 3}
-  m_Name: 63 Baya del Interior
+  m_Name: 63 Piedra de Vida
   m_EditorClassIdentifier: 
-  name: Baya del Interior
+  name: Piedra de Vida
   ID: 63
   cost: 0
   nivel: 0
-  sprite: {fileID: 21300000, guid: b920bdfece3d9114eaca3956bb14af32, type: 3}
+  sprite: {fileID: 21300000, guid: 119fbf9d1f5e7624aaf15a7f3a9d90ce, type: 3}
   marcos:
   - {fileID: 21300000, guid: 912fbdf0778a9c34c9e81b8d8ca8ecb9, type: 3}
   - {fileID: 21300000, guid: 3eb33d8bafad5b34d9b013f3cedca11c, type: 3}
