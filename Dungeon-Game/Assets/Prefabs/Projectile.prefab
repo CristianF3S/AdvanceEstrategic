@@ -123,6 +123,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1021754039623256368, guid: 781cbb219ab619149bcdaabd69cd5914, type: 3}
+      propertyPath: animatedLights.Array.data[0].light
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3555997207373312534, guid: 781cbb219ab619149bcdaabd69cd5914, type: 3}
       propertyPath: m_Intensity
       value: 0
@@ -192,7 +196,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5177547523510470404, guid: 781cbb219ab619149bcdaabd69cd5914, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5318118474938795680, guid: 781cbb219ab619149bcdaabd69cd5914, type: 3}
@@ -293,8 +298,13 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7770337310441391829, guid: 36bf7ab9b3f39c44c839b2d2e7e1beaf, type: 3}
+      propertyPath: animatedLights.Array.data[0].light
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7898475362266832841, guid: 36bf7ab9b3f39c44c839b2d2e7e1beaf, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2360655870356088562, guid: 36bf7ab9b3f39c44c839b2d2e7e1beaf, type: 3}
@@ -407,8 +417,13 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7770337310441391829, guid: dc21188c7092ec1409720206b021693d, type: 3}
+      propertyPath: animatedLights.Array.data[0].light
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7898475362266832841, guid: dc21188c7092ec1409720206b021693d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2360655870356088562, guid: dc21188c7092ec1409720206b021693d, type: 3}
