@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     public int posX;
     public int posY;
     Vector2 position;
+    public float powerAttack;
     public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,7 @@ public class Projectile : MonoBehaviour
             if (hit.collider.tag == "Enemy")
             {
                 print("Ataco");
-                hit.collider.GetComponent<Enemy>().ReceiveDamage(100);
+                hit.collider.GetComponent<Enemy>().ReceiveDamage(powerAttack);
             }
         }
 
@@ -47,7 +48,7 @@ public class Projectile : MonoBehaviour
             if (hit.collider.tag == "Boss")
             {
                 print("Ataco");
-                hit.collider.GetComponent<ArbolinaBoss>().ReceiveDamage(100);
+                hit.collider.GetComponent<ArbolinaBoss>().ReceiveDamage(powerAttack);
             }
         }
     }

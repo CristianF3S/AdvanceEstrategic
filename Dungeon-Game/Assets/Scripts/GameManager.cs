@@ -130,6 +130,8 @@ public class GameManager : MonoBehaviour
             playerScript.posX = 4;
             playerScript.posY = 1;
 
+            player.transform.position = new Vector2(referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().tiles[playerScript.posX, playerScript.posY].transform.position.x, referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().tiles[playerScript.posX, playerScript.posY].transform.position.y + 0.4f);
+
         }
         else if(DoorID == referenceOfRoomGenerator.Length - 1)
         {
@@ -139,9 +141,11 @@ public class GameManager : MonoBehaviour
 
             camera.transform.position = new Vector3(4.5f, 4.5f, -10);
 
-            player.transform.position = new Vector3(4.4f, 1.1f, 0);
+            
             playerScript.posX = 4;
             playerScript.posY = 1;
+            player.transform.position = new Vector2(referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().tiles[playerScript.posX, playerScript.posY].transform.position.x, referenceOfRoomGenerator[idRoomActive].GetComponent<RoomGenerator>().tiles[playerScript.posX, playerScript.posY].transform.position.y + 0.4f);
+
             //Activar Boss
         }
         else if(DoorID == 0)

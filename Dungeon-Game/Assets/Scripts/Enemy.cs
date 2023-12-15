@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public GameObject dataGame;
+    public PlayerData dataPlayer;
+
     public LayerMask collisionLayer;
     public int x, y;
     public float life;
@@ -15,8 +18,8 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-
+        dataGame = GameObject.Find("Data");
+        dataPlayer = dataGame.GetComponent<PlayerData>();
     }
 
     // Update is called once per frame
@@ -101,7 +104,7 @@ public class Enemy : MonoBehaviour
                     }
                     break;
             }
-            if(roomGenerator.tiles[xMove, yMove].GetComponent<Tale>().ID == 1)
+            if(roomGenerator.tiles[xMove, yMove].GetComponent<Tale>().ID == 1 || roomGenerator.tiles[xMove, yMove].GetComponent<Tale>().ID == 3)
             {
                 find = true;
             }
@@ -143,6 +146,7 @@ public class Enemy : MonoBehaviour
         life -= damage;
         if (life <= 0)
         {
+            dataPlayer.dinero = Random.Range(1, 4);
             Destroy(this.gameObject);
         }
     }

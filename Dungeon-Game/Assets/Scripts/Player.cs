@@ -70,6 +70,7 @@ public class Player : MonoBehaviour
                 projectile.GetComponent<Projectile>().posX = posX + (int)attackPosition[i].x;
                 projectile.GetComponent<Projectile>().posY = posY + (int)attackPosition[i].y;
                 projectile.GetComponent<Projectile>().gameManager = gameManager;
+                projectile.GetComponent<Projectile>().powerAttack = powerAttack;
                 gameManager.PlayerTurnFinished();
             }
         }

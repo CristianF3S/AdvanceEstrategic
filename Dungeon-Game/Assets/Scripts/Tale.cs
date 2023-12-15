@@ -47,13 +47,13 @@ public class Tale : MonoBehaviour
         if(ID == 1)
         {
             this.gameObject.GetComponent<SpriteRenderer>().color = transparente;
-            sprite.sprite = sprites[Random.Range(0, 4)];
+            sprite.sprite = sprites[Random.Range(0, 3)];
             collider2D.enabled = false;
         }
         else if(ID == 0)
         {
             this.gameObject.GetComponent<SpriteRenderer>().color = transparente;
-            sprite.sprite = sprites[Random.Range(4, 8)];
+            sprite.sprite = sprites[Random.Range(3, 8)];
         }
 
     }

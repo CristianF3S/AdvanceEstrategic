@@ -53,6 +53,25 @@ public class RoomGenerator : MonoBehaviour
         GenerateTales();
         GenerateEnemy();
         GenerateDoors();
+        GenerateItems();
+    }
+    public void GenerateItems()
+    {
+        if(RoomID == 0 || RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
+        {
+            while (true)
+            {
+                int x = Random.Range(0, 8);
+                int y = Random.Range(5, tiles.GetLength(1));
+                if(tiles[x,y].GetComponent<Tale>().ID == 0)
+                {
+                    GameObject instatiateItem = Instantiate(itemCollectable, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y + 0.2f), Quaternion.identity);
+                    instatiateItem.GetComponent<ItemCollectable>().item = itemsBuyed[Random.Range(0, itemsBuyed.Count)];
+                    print("IntanciarItem");
+                    break;
+                }
+            }
+        }
     }
     private void GenerateDoors()
     {
@@ -78,16 +97,14 @@ public class RoomGenerator : MonoBehaviour
                         instantiatedDoor.GetComponent<Door>().posY = y;
                         instantiatedDoor.GetComponent<Door>().gameManager = gameManager;
                         instantiatedDoor.transform.parent = transform;
+                        tiles[x, y].GetComponent<Tale>().ID = 3;
                         break;
                     }
                     s += 3;
                 }
             }
 
-            x = Random.Range(0, 8);
-            y = Random.Range(5, tiles.GetLength(1));
-            GameObject instatiateItem = Instantiate(itemCollectable, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y + 0.2f), Quaternion.identity);
-            instatiateItem.GetComponent<ItemCollectable>().item = itemsBuyed[Random.Range(0, itemsBuyed.Count)];
+            
         }
         else if(RoomID != 0 && RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
         {
@@ -99,10 +116,7 @@ public class RoomGenerator : MonoBehaviour
             instantiatedDoor.GetComponent<Door>().posY = y;
             instantiatedDoor.GetComponent<Door>().gameManager = gameManager;
             instantiatedDoor.transform.parent = transform;
-            x = Random.Range(0, 8);
-            y = Random.Range(5, tiles.GetLength(1));
-            GameObject instatiateItem = Instantiate(itemCollectable, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y + 0.2f), Quaternion.identity);
-            instatiateItem.GetComponent<ItemCollectable>().item = itemsBuyed[Random.Range(0, itemsBuyed.Count)];
+            
         }
     }
 
