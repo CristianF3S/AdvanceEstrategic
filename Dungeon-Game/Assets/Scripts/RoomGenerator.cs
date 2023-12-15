@@ -211,7 +211,7 @@ public class RoomGenerator : MonoBehaviour
                     int y = Random.Range(5, tiles.GetLength(1));
                     if (tiles[x,y] != null && tiles[x, y].GetComponent<Tale>().ID != 1)
                     {
-                        GameObject instantiatedEnemy = Instantiate(Enemy[Random.Range(0,2)], tiles[x,y].transform.position, Quaternion.identity);
+                        GameObject instantiatedEnemy = Instantiate(Enemy[Random.Range(0,Enemy.Length)], tiles[x,y].transform.position, Quaternion.identity);
                         instantiatedEnemy.GetComponent<Enemy>().x = tiles[x, y].GetComponent<Tale>().posX;
                         instantiatedEnemy.GetComponent<Enemy>().y = tiles[x, y].GetComponent<Tale>().posY;
                         instantiatedEnemy.GetComponent<Enemy>().roomGenerator = this.GetComponent<RoomGenerator>();
