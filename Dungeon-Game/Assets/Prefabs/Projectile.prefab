@@ -102,4 +102,5 @@ MonoBehaviour:
     m_Bits: 8
   posX: 0
   posY: 0
+  powerAttack: 0
   gameManager: {fileID: 0}

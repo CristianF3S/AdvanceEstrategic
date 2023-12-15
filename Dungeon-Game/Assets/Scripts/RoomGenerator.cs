@@ -48,32 +48,41 @@ public class RoomGenerator : MonoBehaviour
         }
         matrizTiles = new int[x, y];
         tiles = new GameObject[x, y];
-        enemies = new Enemy[6];
+        enemies = new Enemy[10];
         GenerateTerrain();
         GenerateTales();
         GenerateEnemy();
         GenerateDoors();
-        GenerateItems();
+        if(RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
+        {
+            GenerateItems();
+        }
     }
     public void GenerateItems()
     {
-        if(RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
+        int r = Random.Range(5, 8);
+        for(int i = 0; i <= r; i++)
         {
-            while (true)
+            if(RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
             {
-                int x = Random.Range(0, 8);
-                int y = Random.Range(5, tiles.GetLength(1));
-                if(tiles[x,y].GetComponent<Tale>().ID == 0 && tiles[x, y] != null)
+                while (true)
                 {
-                    print("TileID = " + tiles[x, y].GetComponent<Tale>().ID);
-                    GameObject instatiateItem = Instantiate(itemCollectable, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y + 0.2f), Quaternion.identity);
-                    instatiateItem.GetComponent<ItemCollectable>().item = itemsBuyed[Random.Range(0, itemsBuyed.Count -1)];
-                    instatiateItem.GetComponent<ItemCollectable>().gameManager = this.gameManager;
-                    print("IntanciarItem");
-                    break;
+                    int x = Random.Range(0, 8);
+                    int y = Random.Range(5, tiles.GetLength(1));
+                    if(tiles[x,y].GetComponent<Tale>().ID == 0 && tiles[x, y] != null)
+                    {
+                        print("TileID = " + tiles[x, y].GetComponent<Tale>().ID);
+                        GameObject instatiateItem = Instantiate(itemCollectable, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y + 0.2f), Quaternion.identity);
+                        instatiateItem.GetComponent<ItemCollectable>().item = itemsBuyed[Random.Range(0, itemsBuyed.Count -1)];
+                        instatiateItem.transform.parent = transform;
+                        instatiateItem.GetComponent<ItemCollectable>().gameManager = this.gameManager;
+                        print("IntanciarItem");
+                        break;
+                    }
                 }
             }
         }
+        
     }
     private void GenerateDoors()
     {
@@ -176,7 +185,7 @@ public class RoomGenerator : MonoBehaviour
         if (RoomID != gameManager.referenceOfRoomGenerator.Length - 1)
         {
             int s = 10;
-            for(int i = 0; i<6; i++)
+            for(int i = 0; i<10; i++)
             {
                 while (true)
                 {
