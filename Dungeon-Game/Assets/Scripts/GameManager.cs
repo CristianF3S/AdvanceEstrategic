@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject PanelMenu;
+
     [SerializeField] private ControlDeCamara controlDeCamara;
     [SerializeField] GameObject camera;
     [SerializeField] GameObject roomGeneratorObj;
@@ -245,4 +248,15 @@ public class GameManager : MonoBehaviour
             MoveTheCamera();
         }
     }
+
+    public void ActivarPanel()
+    {
+        PanelMenu.SetActive(true);
+    }
+    public void ReturnMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+
 }

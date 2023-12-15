@@ -101,6 +101,7 @@ public class Player : MonoBehaviour
         efectoHit.SetActive(false); 
         if (life <= 0)
         {
+            gameManager.ActivarPanel();
             Destroy(this.gameObject);
         }
     }

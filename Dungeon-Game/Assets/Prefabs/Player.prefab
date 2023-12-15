@@ -169,7 +169,23 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4264419220256852981, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5591565617775614811, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+      propertyPath: m_Intensity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6737383008177208409, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+      propertyPath: m_Color.g
+      value: 0.20784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 6737383008177208409, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
+      propertyPath: m_Color.r
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 6737383008177208409, guid: e93a137caa2d7a5449f2ec36cf75d7fe, type: 3}
       propertyPath: m_Intensity
       value: 0
       objectReference: {fileID: 0}
