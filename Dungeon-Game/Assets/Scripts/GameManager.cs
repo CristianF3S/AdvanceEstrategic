@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
         idRoomActive = 0;
         GenerateRooms();
         
-        StartCoroutine(pruebas());
+        
     }
 
     private void GenerateRooms()
@@ -78,10 +78,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        player = Instantiate(player, new Vector3(4.4f, 1.1f, 0), Quaternion.identity);
-        playerScript = player.GetComponent<Player>();
-        playerScript.gameManager = this.gameObject.GetComponent<GameManager>();
-        playerScript.weapon = weapons[weaponSelected];
+        
     }
 
     public void PlayerTurn()
@@ -164,6 +161,16 @@ public class GameManager : MonoBehaviour
         }
 
 
+    }
+
+    public void StarGame(int num)
+    {
+        weaponSelected = num;
+        player = Instantiate(player, new Vector3(4.4f, 1.1f, 0), Quaternion.identity);
+        playerScript = player.GetComponent<Player>();
+        playerScript.gameManager = this.gameObject.GetComponent<GameManager>();
+        playerScript.weapon = weapons[weaponSelected];
+        StartCoroutine(pruebas());
     }
 
 }

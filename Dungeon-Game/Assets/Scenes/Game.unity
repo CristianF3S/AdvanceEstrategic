@@ -1410,6 +1410,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4661833815161665456, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661833815161665456, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661833815161665456, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1283720573}
+    - target: {fileID: 4661833815161665456, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661833815161665456, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: StarGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661833815161665456, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661833815161665456, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661833815161665456, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4695824312829934966, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1473,6 +1505,34 @@ PrefabInstance:
     - target: {fileID: 4750228015616486476, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946458078475341502, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946458078475341502, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946458078475341502, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1283720573}
+    - target: {fileID: 4946458078475341502, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946458078475341502, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: StarGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946458078475341502, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946458078475341502, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5181159799936262453, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1709,6 +1769,38 @@ PrefabInstance:
     - target: {fileID: 7150363820810295577, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196164919772805003, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196164919772805003, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196164919772805003, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1283720573}
+    - target: {fileID: 7196164919772805003, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196164919772805003, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: StarGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196164919772805003, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196164919772805003, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196164919772805003, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7459872820711375239, guid: 9fa3c2e188b0a4343a2317acc37f6221, type: 3}
       propertyPath: m_AnchorMax.y

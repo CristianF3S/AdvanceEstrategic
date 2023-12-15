@@ -104,7 +104,7 @@ MonoBehaviour:
   x: 0
   y: 0
   life: 30
-  powerAttack: 20
+  powerAttack: 2
   roomGenerator: {fileID: 0}
 --- !u!58 &-7690831229929307939
 CircleCollider2D:
