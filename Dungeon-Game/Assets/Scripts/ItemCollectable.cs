@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemCollectable : MonoBehaviour
 {
     public LayerMask collisionLayer;
+    public GameManager gameManager;
     public Items item;
 
     public GameObject marco;
@@ -41,6 +42,7 @@ public class ItemCollectable : MonoBehaviour
         float maxRayDistance = 0.3f;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxRayDistance, collisionLayer);
 
+        print("Collected");
         if (hit.collider != null)
         {
             if (hit.collider.tag == "Player")
@@ -49,6 +51,7 @@ public class ItemCollectable : MonoBehaviour
                 hit.collider.gameObject.GetComponent<Player>().quantityMovement += Movimiento;
                 hit.collider.gameObject.GetComponent<Player>().powerAttack += powerAttack;
                 hit.collider.gameObject.GetComponent<Player>().life += life;
+                gameManager.InstanciarItemEnUI(item.sprite);
                 Destroy(this.gameObject);
             }
         }

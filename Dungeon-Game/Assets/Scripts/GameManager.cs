@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,9 +22,15 @@ public class GameManager : MonoBehaviour
     //Items
     public Items[] items;
     public List<Items> itemsBuyed;
+    public GameObject imageItemUI;
+    public GameObject parentimageItemUI;
 
     public GameObject dataGame;
     public PlayerData dataPlayer;
+
+    //UI
+    public TextMeshProUGUI moneyText, stregthText;
+    bool inGame;
 
 
     [SerializeField] MovementCard_SO[] movementCard_SO; //Tener los 3 Card Movement seteados
@@ -36,6 +44,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        inGame = false;
         dataGame = GameObject.Find("Data");
         dataPlayer = dataGame.GetComponent<PlayerData>();
         weaponActive = true;
@@ -57,6 +66,15 @@ public class GameManager : MonoBehaviour
         GenerateRooms();
         
         
+    }
+    private void Update()
+    {
+        if (inGame)
+        {
+
+            moneyText.text = dataPlayer.dinero.ToString();
+            stregthText.text = playerScript.powerAttack.ToString();
+        }
     }
 
     private void GenerateRooms()
@@ -174,7 +192,16 @@ public class GameManager : MonoBehaviour
         playerScript = player.GetComponent<Player>();
         playerScript.gameManager = this.gameObject.GetComponent<GameManager>();
         playerScript.weapon = weapons[weaponSelected];
+        inGame = true;
         StartCoroutine(pruebas());
+    }
+
+    public void InstanciarItemEnUI(Sprite sprite)
+    {
+        print("ITEM");
+        GameObject instantiatedItem = Instantiate(imageItemUI, new Vector2(0,0), Quaternion.identity);
+        instantiatedItem.GetComponent<Image>().sprite = sprite;
+        instantiatedItem.transform.SetParent(parentimageItemUI.transform);
     }
 
 }
