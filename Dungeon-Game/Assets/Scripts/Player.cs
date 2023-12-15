@@ -36,6 +36,16 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Q)){
+            ReceiveDamage(10);
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            life += 10;
+        }
+
+        gameManager.LifePlayerManagment(life);
+
         if (Input.GetMouseButtonDown(0))
         {
             // Lanza un rayo desde la posición del ratón

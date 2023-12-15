@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject dataGame;
     public PlayerData dataPlayer;
+    //Player 
+    
+    public GameObject imageLifePanel2;
+    public GameObject[] lifePlayerImages;
 
     //UI
     public TextMeshProUGUI moneyText, stregthText;
@@ -202,6 +206,36 @@ public class GameManager : MonoBehaviour
         GameObject instantiatedItem = Instantiate(imageItemUI, new Vector2(0,0), Quaternion.identity);
         instantiatedItem.GetComponent<Image>().sprite = sprite;
         instantiatedItem.transform.SetParent(parentimageItemUI.transform);
+    }
+
+    public void LifePlayerManagment(float vidaActual)
+    {
+        if(vidaActual > 100)
+        {
+            imageLifePanel2.SetActive(true);
+        }
+        else
+        {
+            imageLifePanel2.SetActive(false);
+        }
+        int i = 0;
+        while(i < lifePlayerImages.Length*10)
+        {
+            if(vidaActual > i)
+            {
+                int num = i / 10;
+                lifePlayerImages[num].SetActive(true);
+            }
+            else
+            {
+                int num = i / 10;
+                lifePlayerImages[num].SetActive(false);
+            }
+            i += 10;
+
+
+        }
+        
     }
 
 }

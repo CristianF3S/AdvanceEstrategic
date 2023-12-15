@@ -91,7 +91,7 @@ public class RoomGenerator : MonoBehaviour
                     y = Random.Range(s, tiles.GetLength(1));
                     if (tiles[x, y].GetComponent<Tale>().ID != 1)
                     {
-                        GameObject instantiatedDoor = Instantiate(door, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y-0.2f), Quaternion.identity);
+                        GameObject instantiatedDoor = Instantiate(door, new Vector2(tiles[x, y].transform.position.x, tiles[x, y].transform.position.y), Quaternion.identity);
                         doorsReferences[i] = instantiatedDoor;
                         instantiatedDoor.GetComponent<Door>().DoorID = i;
                         instantiatedDoor.GetComponent<Door>().posX = x;
