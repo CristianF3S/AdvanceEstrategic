@@ -282,6 +282,42 @@ MonoBehaviour:
     m_Localized: Add L moves.
     m_Metadata:
       m_Items: []
+  - m_Id: 2536773018714112
+    m_Localized: Movement +
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536776067973120
+    m_Localized: Movement ++
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536776944582656
+    m_Localized: Movement +++
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536777703751680
+    m_Localized: Life +
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536778437754880
+    m_Localized: Life ++
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536779016568832
+    m_Localized: Life +++
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536900022239232
+    m_Localized: Strenght +
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536902589153280
+    m_Localized: Strenght ++
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2536903218298880
+    m_Localized: Strenght +++
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
