@@ -110,6 +110,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1479589117720756612}
     m_Modifications:
+    - target: {fileID: 672147877001532172, guid: 9e58e6f721ea8bf4a9855fcb3be2bd42, type: 3}
+      propertyPath: m_Intensity
+      value: 0.69028294
+      objectReference: {fileID: 0}
     - target: {fileID: 4362882308365500596, guid: 9e58e6f721ea8bf4a9855fcb3be2bd42, type: 3}
       propertyPath: m_Name
       value: Boss01
@@ -155,7 +159,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5243008434757434770, guid: 9e58e6f721ea8bf4a9855fcb3be2bd42, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e58e6f721ea8bf4a9855fcb3be2bd42, type: 3}
